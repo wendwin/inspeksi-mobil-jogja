@@ -1,21 +1,21 @@
 
 ---
 
-## ?? Inspeksi Mobil Jogja
+## Inspeksi Mobil Jogja
 
 Proyek ini adalah website inspeksi mobil berbasis **React + Next.js**.
 
-### ?? Struktur Proyek
+### Struktur Proyek
 
-- `app/` ? Struktur routing Next.js (versi app directory).
-- `public/` ? Aset publik seperti gambar (`/img/logo.png`, dll).
-- `components/` ? Komponen UI.
-- `styles/` ? File CSS global.
-- `package.json` ? Daftar dependensi dan script.
+- `app/` Struktur routing Next.js (versi app directory).
+- `public/` Aset publik seperti gambar (`/img/logo.png`, dll).
+- `components/` Komponen UI.
+- `styles/` File CSS global.
+- `package.json` Daftar dependensi dan script.
 
 ---
 
-## ?? Instalasi
+## Instalasi
 
 1. **Clone repo/fork**:
    ```bash
@@ -36,7 +36,7 @@ Proyek ini adalah website inspeksi mobil berbasis **React + Next.js**.
 
 ---
 
-## ?? Menjalankan Project
+## Menjalankan Project
 
 Jalankan server development:
 ```bash
@@ -52,16 +52,16 @@ http://localhost:3000
 
 ---
 
-## ?? Gambar & Asset
+## Gambar & Asset
 
 Pastikan semua gambar diletakkan di dalam folder `public/img/`, contohnya:
-- `public/img/streat.png` ? Latar belakang hero.
-- `public/img/logo.png` ? Logo utama.
-- `public/img/car1.png` ? Gambar mobil.
+- `public/img/streat.png`Latar belakang hero.
+- `public/img/logo.png`Logo utama.
+- `public/img/car1.png`Gambar mobil.
 
 ---
 
-## ?? Catatan Penting
+## Catatan Penting
 
 - Proyek ini menggunakan `Next.js App Router` (bukan `pages/`).
 - Jalankan di lingkungan Node.js versi 16 ke atas.
