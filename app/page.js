@@ -7,6 +7,7 @@ import Trusted from "./components/landingpagecomponents/Trusted";
 import Service from "./components/landingpagecomponents/Service";
 import Testimoni from "./components/landingpagecomponents/Testimoni";
 import Mitra from "./components/landingpagecomponents/Mitra";
+import Footer from "./components/landingpagecomponents/Footer";
 
 // jika ada compoenent baru maka lakukan import disini sesuikan nama folder dan filenya
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Order />
       <Testimoni />
       <Mitra />
+      <Footer />
     </main>
   );
 }
