@@ -1,7 +1,5 @@
 // File: pages ini adlaah halman yang di render CSR pertama kali aplikasi di jalankan
 import Hero from "./components/landingpagecomponents/Hero";
-import Stats from "./components/landingpagecomponents/Stats";
-import CarList from "./components/landingpagecomponents/CartList";
 import Order from "./components/landingpagecomponents/Order";
 import Trusted from "./components/landingpagecomponents/Trusted";
 import Service from "./components/landingpagecomponents/Service";
@@ -20,10 +18,10 @@ export default function Home() {
       <Trusted />
       <Service />
       <Order />
+      <Promotion/>
       <Testimoni />
       <Mitra />
       <Footer />
-      <Promotion/>
     </main>
   );
 }
