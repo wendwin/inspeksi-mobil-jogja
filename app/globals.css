@@ -30,3 +30,9 @@ body {
   background-color : #192459;
   
 }
+
+.yellow-bar{
+  width: 80px;
+  height: 4px;
+  background-color: #E47F3A;
+}
