@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="font-sans">
       {/* tambahkan class mellaui props disni class di dapat dri compoenent yang bersangkuatan */}
-      {/* <Hero /> */}
+      <Hero />
       <Stats />
       <CarList />
       <Order />
