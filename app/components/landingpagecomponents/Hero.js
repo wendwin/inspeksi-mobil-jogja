@@ -6,14 +6,14 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";     {
 export default function Hero() {
   return (
     <section
-      className="relative text-white bg-cover bg-center max-h[80px"
+      className="relative text-white bg-cover bg-bottom max-h[100px"
       style={{ backgroundImage: "url(/img/streat.png)" }}
     >
       {/* Overlay hitam transparan */}
-      <div className="absolute inset-0 bg-black/10" />
+      <div className="absolute inset-0 bg-black/20 z-0 pointer-events-none" />
 
-      {/* Header */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-sm">
+      {/* Navbar
+      <div className="relative z-3 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-sm">
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
           <img
             src="/img/logo.png"
@@ -52,41 +52,30 @@ export default function Hero() {
           </a>
         </div>
       </div>
-
-      {/* Bagian Bulatan */}
-      <div className="w-full flex justify-end">
-        <div className="relative w-64 h-64 mx-auto flex items-center justify-center translate-x-[100px] translate-y-20">
-          <div className="absolute w-full h-full rounded-full bg-white opacity-20 z-0" />
-          <div className="absolute w-[85%] h-[85%] rounded-full bg-yellow-300 opacity-30 z-0" />
-          <div className="relative bg-orange-500 w-56 h-56 rounded-full shadow-lg flex flex-col justify-center items-center text-white text-center px-4 z-10">
-            <div className="text-sm">Harga mulai dari</div>
-            <div className="text-2xl font-bold">Rp 500.000</div>
-            <p className="mt-2 text-xs">
-              Ingin tahu kondisi mobil impianmu?
-              <br />
-              Kami bantu inspeksi mobil bekas agar Anda lebih yakin saat
-              membeli.
-            </p>
-            <a
-              href="https://wa.me/08XXXXXXXX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="mt-4 bg-white text-orange-600 font-semibold px-2 py-1 rounded-full">
-                Contact WA
-              </button>
-            </a>
-          </div>
+       */}
+      <div className="z-10 flex flex-col md:flex-row items-center">
+        {/*Foto*/}
+        <img className="-scale-x-90 md:w-260 object-cover md:-ml-40 md:-mb-10 md:mt-20 drop-shadow-md order-last md:order-first" src="/img/Car1_homepage.png"></img>
+        <div className="md:max-w-140 max-w-70 order-first md:order-last text-justify md:text-start pt-20 md:pt-0">
+          <p className="text-lg text-[#192459] md:text-3xl font-bold drop-shadow-md">Beli mobil bekas? Biar kami bantu cekin dulu!</p>
+          <p className="text-base text-white md:text-xl my-3 drop-shadow-md">Inspeksi Mobil Jogja hadir untuk bantu kamu cek kondisi mobil secara menyeluruh. Mulai dari bodi, mesin, interior, sampai dokumen. Percayakan pada <span className="font-bold">Jasa Inspeksi  Jogja</span>, Harga Mulai dari :</p>
+          <p className="text-lg text-white md:text-3xl font-bold my-3 md:my-4 drop-shadow-md">Rp 399.900</p>
+          <button className="p-2 md:p-3 bg-blue-500 rounded-lg transform transition-all duration-200 hover:scale-105 hover:bg-blue-900 drop-shadow-md">Hubungi Sekarang</button>
         </div>
       </div>
-
-      {/* Bagian Mobil*/}
-      <div className="relative z-10 flex justify-center px-6">
-        <img
-          src="/img/car1.png"
-          alt="Mobil"
-          className="w-[250px] md:w-[450px] mr-40"
-        />
+        <div className="relative mt-2 -bottom-15 mb-30 md:mb-40 rounded-lg flex flex-wrap justify-center gap-5 md:gap-30 mx-auto  md:w-250 text-center py-8 bg-white shadow-md border-1 border-gray-200">
+        <div>
+          <div className="text-xl md:text-3xl font-bold text-orange-600">500</div>
+          <div className="text-sm md:text-xl text-black ">Inspeksi Selesai</div>
+        </div>
+        <div>
+          <div className="text-xl md:text-3xl font-bold text-orange-600">299</div>
+          <div className="text-sm md:text-xl text-black ">Jumlah Pelanggan</div>
+        </div>
+        <div>
+          <div className="text-xl md:text-3xl font-bold text-orange-600">150</div>
+          <div className="text-sm md:text-xl text-black ">Rekan Dealer</div>
+        </div>
       </div>
     </section>
   );
