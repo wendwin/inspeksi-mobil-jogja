@@ -5,12 +5,12 @@ export default function Service() {
                 <p className="text-md font-bold md:text-xl">Layanan Kami</p>
                 <div className="yellow-bar"></div>
             </div>
-            <div className="py-5 md:py-10 flex flex-wrap gap-5">
+            <div className="py-5 md:py-10 flex flex-wrap justify-center gap-2">
                 <div className="card bg-base-100 shadow-lg max-w-50 mx-auto md:max-w-75 ">
                     <div className="card-body border-gray-300 border-1 bg-white text-center rounded-xl py-5 px-2 md:min-h-100">
                         <h2 className="card-title text-black text-md py-2 font-medium uppercase md:text-xl">Reguler Car</h2>
                         <p className="text-black text-xs min-h-25 md:text-sm">City car, small sedan ( contoh : Honda Jazz, Toyota Avanza, Daihatsu Xenia ), dsb</p>
-                        <img className="mx-auto py-5 md:py-10 max-w-35 max-h-35 md:max-w-60 md:max-h-60" src="/img/regulercar_layanankami.png"alt="regulercar" />
+                        <img className="mx-auto py-5 md:py-8 -mt-6 max-w-35 max-h-35 md:max-w-60 md:max-h-60" src="/img/regulercar_layanankami.png"alt="regulercar" />
                         <p className="uppercase text-base text-amber-500 font-medium my-3 md:text-xl">Promo</p>
                         <p className="uppercase text-base text-gray-500 line-through font-medium md:text-xl">RP 439.900</p>
                         <p className="uppercase text-md text-black font-bold my-3 md:text-2xl">RP 399.000</p>
@@ -23,7 +23,7 @@ export default function Service() {
                     <div className="card-body border-gray-300 border-1 bg-white text-center rounded-xl py-5 px-2 md:min-h-100">
                         <h2 className="card-title text-black text-md py-2 font-medium uppercase md:text-xl">Premium Car</h2>
                         <p className="text-black text-xs min-h-25 md:text-sm">Full - size sedan, SUV ( contoh : Mazda CX-5, Toyota Fortuner, Nissan X-Train, Honda Accord ), dsb</p>
-                        <img className="mx-auto py-5 md:py-10 max-w-35 max-h-35 md:max-w-60 md:max-h-60" src="/img/premiumcar_layanankami.png"alt="premiumcar" />
+                        <img className="mx-auto py-5 md:py-8 -mt-6 max-w-35 max-h-35 md:max-w-60 md:max-h-60" src="/img/premiumcar_layanankami.png"alt="premiumcar" />
                         <p className="uppercase text-base text-amber-500 font-medium my-3 md:text-xl">Promo</p>
                         <p className="uppercase text-base text-gray-500 line-through font-medium md:text-xl">RP 519.900</p>
                         <p className="uppercase text-md text-black font-bold my-3 md:text-2xl">RP 459.000</p>
@@ -36,7 +36,7 @@ export default function Service() {
                     <div className="card-body border-gray-300 border-1 bg-white text-center rounded-xl py-5 px-2 md:min-h-100">
                         <h2 className="card-title text-black text-md py-2 font-medium uppercase md:text-xl">Luxury & Older Car</h2>
                         <p className="text-black text-xs min-h-25 md:text-sm">Mobil Eropa, Luxury MPV ( contoh: Toyota Alphard, Audi, BMW), Mobil usia 15 tahun ke atas), dsb</p>
-                        <img className="mx-auto py-5 md:py-10 max-w-35 max-h-35 md:max-w-60 md:max-h-60" src="/img/luxurycar_layanankami.png"alt="luxurycar" />
+                        <img className="mx-auto py-5 md:py-8 -mt-6 max-w-35 max-h-35 md:max-w-60 md:max-h-60" src="/img/luxurycar_layanankami.png"alt="luxurycar" />
                         <p className="uppercase text-base text-amber-500 font-medium my-3 md:text-xl">Promo</p>
                         <p className="uppercase text-base text-gray-500 line-through font-medium md:text-xl">RP 659.900</p>
                         <p className="uppercase text-md text-black font-bold my-3 md:text-2xl">RP 550.000</p>
