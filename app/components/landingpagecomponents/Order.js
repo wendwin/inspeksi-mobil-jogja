@@ -15,7 +15,7 @@ export default function Order(){
                         <img src="/img/inspeksi_icon.png" alt="" className="w-15 h-15"/>
                         <div className="text-white">
                             <h5 className="text-base font-semibold mb-1">Pelaksanaan Inspeksi</h5>
-                            <p className="text-sm">Pelanggan mengisi formulir atau menghubungi tim untuk menjadwalkan inspeksi sesuai lokasi dan waktu yang diinginkan</p>
+                            <p className="text-sm">Tim teknisi datang ke lokasi dan melakukan pemeriksaan menyeluruh terhadap kendaraan</p>
                         </div>
                     </div>
                     <div className="flex justify-center items-center gap-4 mb-6">
