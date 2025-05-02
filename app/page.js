@@ -5,6 +5,7 @@ import CarList from "./components/landingpagecomponents/CartList";
 import Order from "./components/landingpagecomponents/Order";
 import Trusted from "./components/landingpagecomponents/Trusted";
 import Service from "./components/landingpagecomponents/Service";
+import Promotion from "./components/landingpagecomponents/Promotion";
 
 // jika ada compoenent baru maka lakukan import disini sesuikan nama folder dan filenya
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Service />
       <CarList />
       <Order />
+      <Promotion/>
     </main>
   );
 }
