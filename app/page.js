@@ -3,6 +3,9 @@ import Hero from "./components/landingpagecomponents/Hero";
 import Stats from "./components/landingpagecomponents/Stats";
 import CarList from "./components/landingpagecomponents/CartList";
 import Order from "./components/landingpagecomponents/Order";
+import Trusted from "./components/landingpagecomponents/Trusted";
+import Service from "./components/landingpagecomponents/Service";
+
 // jika ada compoenent baru maka lakukan import disini sesuikan nama folder dan filenya
 
 export default function Home() {
@@ -11,6 +14,8 @@ export default function Home() {
       {/* tambahkan class mellaui props disni class di dapat dri compoenent yang bersangkuatan */}
       <Hero />
       <Stats />
+      <Trusted />
+      <Service />
       <CarList />
       <Order />
     </main>
