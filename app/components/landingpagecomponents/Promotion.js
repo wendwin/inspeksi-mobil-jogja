@@ -14,7 +14,7 @@ export default function Promotion(){
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-black/40 hover:bg-black/20">
               <h3 className="text-sm uppercase tracking-widest">Promotion</h3>
               <h2 className="text-1xl font-bold md:text-2xl">Check Before You Choose</h2>
-              <div class="f">
+              <div className="f">
               </div>
             </div>
           </div>
