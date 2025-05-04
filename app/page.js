@@ -10,6 +10,7 @@ import Footer from "./components/landingpagecomponents/Footer";
 import Promotion from "./components/landingpagecomponents/Promotion";
 import Modal from "./components/landingpagecomponents/Modal";
 import { useState } from "react";
+import ImgCollection from "./components/landingpagecomponents/ImgCollection";
 // import 'flowbite/dist/flowbite.css';
 
 
@@ -28,6 +29,7 @@ export default function Home() {
       <Promotion/>
       <Testimoni />
       <Mitra />
+      <ImgCollection/>
       <Footer />
       <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}/>
     </main>
