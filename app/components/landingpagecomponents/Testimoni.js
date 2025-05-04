@@ -22,11 +22,11 @@ export default function Testimoni() {
       pagination={{ clickable: true }}
       autoplay={{ delay: 5000 }}
       loop={true}
-      className="my-5 md:my-15 md:w-290"
+      className="my-5 md:my-15 md:max-w-290"
     >
       <SwiperSlide>
-        <div className='flex flex-col md:flex-row justify-center gap-5'>
-            <div className="relative p-5 w-70 mx-auto md:mx-0 md:w-120 h-auto bg-[#EEEEEE] rounder-lg shadow my-10">
+        <div className='flex flex-wrap justify-center gap-5'>
+            <div className="relative p-5 max-w-70 mx-auto md:max-w-120 h-auto bg-[#EEEEEE] rounder-lg shadow my-10">
                 <div className='relative flex justify-between'> 
                     <img className='w-10 md:w-15 -mt-10' src='/img/testimoni1.png'></img>
                     <img className='w-5 md:w-10 -mt-15' src='/img/kutip.svg'></img>
@@ -42,7 +42,7 @@ export default function Testimoni() {
                 <p className='text-sm'>Rizky Ardiansyah</p>
                 <p className='text-xs'>Pecinta Mobil Bekas</p>
             </div>
-            <div className="relative p-5 w-70 mx-auto md:mx-0 md:w-120 bg-[#EEEEEE] rounder-lg shadow my-10">
+            <div className="relative p-5 max-w-70 mx-auto md:max-w-120 h-auto bg-[#EEEEEE] rounder-lg shadow my-10">
             <div className='relative flex justify-between'> 
                     <img className='w-10 md:w-15 -mt-10' src='/img/testimoni2.png'></img>
                     <img className='w-5 md:w-10 -mt-15' src='/img/kutip.svg'></img>
@@ -61,8 +61,8 @@ export default function Testimoni() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className='flex flex-col md:flex-row justify-center gap-5'>
-            <div className="relative p-5 w-70 mx-auto md:mx-0 md:w-120 h-auto bg-[#EEEEEE] rounder-lg shadow my-10">
+        <div className='flex flex-wrap justify-center gap-5'>
+            <div className="relative p-5 max-w-70 mx-auto md:max-w-120 h-auto bg-[#EEEEEE] rounder-lg shadow my-10">
                 <div className='relative flex justify-between'> 
                     <img className='w-10 md:w-15 -mt-10' src='/img/testimoni1.png'></img>
                     <img className='w-5 md:w-10 -mt-15' src='/img/kutip.svg'></img>
@@ -78,7 +78,7 @@ export default function Testimoni() {
                 <p className='text-sm'>Rizky Ardiansyah</p>
                 <p className='text-xs'>Pecinta Mobil Bekas</p>
             </div>
-            <div className="relative p-5 w-70 mx-auto md:mx-0 md:w-120 bg-[#EEEEEE] rounder-lg shadow my-10">
+            <div className="relative p-5 max-w-70 mx-auto md:max-w-120 h-auto bg-[#EEEEEE] rounder-lg shadow my-10">
             <div className='relative flex justify-between'> 
                     <img className='w-10 md:w-15 -mt-10' src='/img/testimoni2.png'></img>
                     <img className='w-5 md:w-10 -mt-15' src='/img/kutip.svg'></img>
@@ -97,8 +97,8 @@ export default function Testimoni() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className='flex flex-col md:flex-row justify-center gap-5'>
-            <div className="relative p-5 w-70 mx-auto md:mx-0 md:w-120 h-auto bg-[#EEEEEE] rounder-lg shadow my-10">
+        <div className='flex flex-wrap justify-center gap-5'>
+            <div className="relative p-5 max-w-70 mx-auto md:max-w-120 h-auto bg-[#EEEEEE] rounder-lg shadow my-10">
                 <div className='relative flex justify-between'> 
                     <img className='w-10 md:w-15 -mt-10' src='/img/testimoni1.png'></img>
                     <img className='w-5 md:w-10 -mt-15' src='/img/kutip.svg'></img>
@@ -114,7 +114,7 @@ export default function Testimoni() {
                 <p className='text-sm'>Rizky Ardiansyah</p>
                 <p className='text-xs'>Pecinta Mobil Bekas</p>
             </div>
-            <div className="relative p-5 w-70 mx-auto md:mx-0 md:w-120 bg-[#EEEEEE] rounder-lg shadow my-10">
+            <div className="relative p-5 max-w-70 mx-auto md:max-w-120 h-auto bg-[#EEEEEE] rounder-lg shadow my-10">
             <div className='relative flex justify-between'> 
                     <img className='w-10 md:w-15 -mt-10' src='/img/testimoni2.png'></img>
                     <img className='w-5 md:w-10 -mt-15' src='/img/kutip.svg'></img>

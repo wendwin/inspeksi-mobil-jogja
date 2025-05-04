@@ -5,8 +5,8 @@ export default function Service() {
                 <p className="text-md font-bold md:text-xl">Layanan Kami</p>
                 <div className="yellow-bar"></div>
             </div>
-            <div className="py-5 md:py-10 flex flex-wrap justify-center gap-7 md:gap-0">
-                <div className="card bg-base-100 shadow-lg max-w-70 mx-auto md:mx-5 md:max-w-75  transform transition-all duration-200 hover:scale-105 group">
+            <div className="py-5 md:py-10 flex flex-wrap justify-center gap-7 md:gap-7">
+                <div className="card bg-base-100 shadow-lg max-w-70 mx-auto md:mx-0 md:max-w-75  transform transition-all duration-200 hover:scale-105 group">
                     <div className="card-body border-gray-300 border-1 bg-white text-center rounded-xl py-5 px-2 md:min-h-95">
                         <h2 className="card-title text-black text-md py-2 font-medium uppercase md:text-xl">Reguler Car</h2>
                         <p className="text-black text-xs px-1 min-h-15 md:min-h-25 md:text-sm">City car, small sedan ( contoh : Honda Jazz, Toyota Avanza, Daihatsu Xenia ), dsb</p>
@@ -19,7 +19,7 @@ export default function Service() {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 shadow-lg max-w-70 mx-auto md:mx-5 md:max-w-75  transform transition-all duration-200 hover:scale-105 group">
+                <div className="card bg-base-100 shadow-lg max-w-70 mx-auto md:mx-0 md:max-w-75  transform transition-all duration-200 hover:scale-105 group">
                     <div className="card-body border-gray-300 border-1 bg-white text-center rounded-xl py-5 px-2 md:min-h-95">
                         <h2 className="card-title text-black text-md py-2 font-medium uppercase md:text-xl">Premium Car</h2>
                         <p className="text-black text-xs px-1 min-h-15 md:min-h-25 md:text-sm">Full - size sedan, SUV ( contoh : Mazda CX-5, Toyota Fortuner, Nissan X-Train, Honda Accord ), dsb</p>
@@ -32,7 +32,7 @@ export default function Service() {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 shadow-lg max-w-70 mx-auto md:mx-5 md:max-w-75  transform transition-all duration-200 hover:scale-105 group">
+                <div className="card bg-base-100 shadow-lg max-w-70 mx-auto md:mx-0 md:max-w-75  transform transition-all duration-200 hover:scale-105 group">
                     <div className="card-body border-gray-300 border-1 bg-white text-center rounded-xl py-5 px-2 md:min-h-95">
                         <h2 className="card-title text-black text-md py-2 font-medium uppercase md:text-xl">Luxury & Older Car</h2>
                         <p className="text-black text-xs px-1 min-h-15 md:min-h-25 md:text-sm">Mobil Eropa, Luxury MPV ( contoh: Toyota Alphard, Audi, BMW), Mobil usia 15 tahun ke atas), dsb</p>
