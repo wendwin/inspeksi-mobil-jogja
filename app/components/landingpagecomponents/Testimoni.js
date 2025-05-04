@@ -9,7 +9,7 @@ import { Star, StarHalf, StarOff } from 'lucide-react'
 
 export default function Testimoni() {
   return (
-    <section className='container px-4 md:px-0 mx-auto my-10 md:my-15'>
+    <section className='max-w-7xl mx-auto px-4 md:px-14 lg:px-8 my-5 md:my-20'>
         <div className="my-2 md:my-5">
             <p className="text-md font-bold md:text-xl">Testimoni</p>
             <div className="yellow-bar"></div>
