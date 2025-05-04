@@ -17,12 +17,68 @@ export default function Modal({ open, onClose }) {
       { id: 'lokasi', label: 'Lokasi & Waktu' },
       { id: 'konfirmasi', label: 'Konfirmasi' },
     ];
+
+    const currentTabIndex = tabs.findIndex(tab => tab.id === activeTab);
+
+    const goToNextTab = () => {
+      if (currentTabIndex < tabs.length - 1) {
+        setActiveTab(tabs[currentTabIndex + 1].id);
+      }
+    };
+    
+    const goToPreviousTab = () => {
+      if (currentTabIndex > 0) {
+        setActiveTab(tabs[currentTabIndex - 1].id);
+      }
+    };
+
     
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
         email: '',
+        merek: '',
+        model: '',
+        varian: '',
+        tahunProduksi: '',
+        warna: '',
+        keterangan: '',
+        alamat: '',
+        tanggal: '',
+        jam: ''
     });
+
+    const handleSubmitToWhatsApp = () => {
+        const message = `
+Hallo, saya ingin memesan jasa inspeksi mobil:
+
+*Data Diri*
+- Nama: ${formData.name}
+- No. HP: ${formData.phone}
+- Email: ${formData.email}
+
+*Data Mobil*
+- Merek: ${formData.merek}
+- Model: ${formData.model}
+- Varian: ${formData.varian}
+- Tahun Produksi: ${formData.tahunProduksi}
+- Warna Mobil: ${formData.warna}
+- Keterangan: ${formData.keterangan || '-'}
+
+*Lokasi & Waktu*
+- Tanggal: ${formData.tanggal}
+- Pukul: ${formData.jam}
+- Alamat: ${formData.alamat}
+
+Terimakasih.
+      `;
+
+        const phoneNumber = '62895380067457'; // Ganti dengan nomor WA tujuan
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      
+        window.open(whatsappUrl, '_blank');
+      };
+      
       
 
 return (
@@ -44,7 +100,7 @@ return (
                       {tabs.map((tab) => (
                         <li key={tab.id} className="me-2">
                           <button
-                            className={`inline-block px-2 py-1 border-b-2 ${
+                            className={`inline-block px-2 py-1 border-b-2 cursor-pointer ${
                               activeTab === tab.id
                                 ? 'text-[#192459] border-[#E47F3A]'
                                 : 'text-gray-500 border-transparent hover:text-gray-600 hover:border-gray-300'
@@ -105,6 +161,8 @@ return (
                               type="text"
                               name="merek"
                               id="merek"
+                              value={formData.merek}
+                                onChange={(e) => setFormData({ ...formData, merek: e.target.value })}
                               className="w-full h-8 sm:h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
                             />
                           </div>
@@ -114,6 +172,8 @@ return (
                               type="text"
                               name="model"
                               id="model"
+                              value={formData.model}
+                                onChange={(e) => setFormData({ ...formData, model: e.target.value })}
                               className="w-full h-8 sm:h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
                             />
                           </div>
@@ -123,6 +183,8 @@ return (
                               type="text"
                               name="varian"
                               id="varian"
+                              value={formData.varian}
+                              onChange={(e) => setFormData({ ...formData, varian: e.target.value })}
                               className="w-full h-8 sm:h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
                             />
                           </div>
@@ -132,6 +194,8 @@ return (
                               type="text"
                               name="tahunProduksi"
                               id="tahunProduksi"
+                              value={formData.tahunProduksi}
+                                onChange={(e) => setFormData({ ...formData, tahunProduksi: e.target.value })}
                               className="w-full h-8 sm:h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
                             />
                           </div>
@@ -141,6 +205,8 @@ return (
                               type="text"
                               name="warna"
                               id="warna"
+                              value={formData.warna}
+                              onChange={(e) => setFormData({ ...formData, warna: e.target.value })}
                               className="w-full h-8 sm:h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
                             />
                           </div>
@@ -150,6 +216,8 @@ return (
                                 name="keterangan"
                                 id="keterangan"
                                 rows="3"
+                                value={formData.keterangan}
+                                onChange={(e) => setFormData({ ...formData, keterangan: e.target.value })}
                                 className="w-full border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5 resize-none"
                               ></textarea>
                             </div>  
@@ -164,6 +232,8 @@ return (
                                 name="alamat"
                                 id="alamat"
                                 rows="3"
+                                value={formData.alamat}
+                                onChange={(e) => setFormData({ ...formData, alamat: e.target.value })}
                                 className="w-full border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5 resize-none"
                               ></textarea>
                             </div>
@@ -173,6 +243,8 @@ return (
                                 type="date"
                                 name="tanggal"
                                 id="tanggal"
+                                value={formData.tanggal}
+                                onChange={(e) => setFormData({ ...formData, tanggal: e.target.value })}
                                 className="w-full h-8 sm:h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
                               />
                             </div>
@@ -182,100 +254,150 @@ return (
                                 type="time"
                                 name="jam"
                                 id="jam"
+                                value={formData.jam}
+                                onChange={(e) => setFormData({ ...formData, jam: e.target.value })}
                                 className="w-full h-8 sm:h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
                               />
                             </div>
                         </div>
                       </div>
                     )}
-                    {activeTab === 'konfirmasi' && (    
-                        <div className="p-4 space-y-6 text-sm">
+                    {activeTab === 'konfirmasi' && (
+                      <div className="p-4 space-y-6 text-sm">
+                        {Object.values(formData).every(value => !value) && (
+                          <div className="text-center mb-4">Data Belum Terisi</div>
+                        )}                  
+
+                        <>
                           {/* Data Diri */}
                           <div>
                             <p className="text-sm text-[#E47F3A] mb-3">Data Diri</p>
                             <div className="grid grid-cols-[150px_1fr] gap-y-2 gap-x-4">
                               <span className="text-gray-500">Nama</span>
-                              <span>Agus Santoso</span>
+                              <span>{formData.name || '-'}</span>                   
 
                               <span className="text-gray-500">No. HP</span>
-                              <span>0812-3456-7890</span>
+                              <span>{formData.phone || '-'}</span>                  
 
                               <span className="text-gray-500">Email</span>
-                              <span>agus@example.com</span>
+                              <span>{formData.email || '-'}</span>
                             </div>
-                          </div>
+                          </div>                    
 
                           {/* Data Mobil */}
                           <div>
                             <p className="text-sm text-[#E47F3A] mb-3">Data Mobil</p>
                             <div className="grid grid-cols-[150px_1fr] gap-y-2 gap-x-4">
                               <span className="text-gray-500">Merek</span>
-                              <span>Toyota</span>
+                              <span>{formData.merek || '-'}</span>                  
 
                               <span className="text-gray-500">Model</span>
-                              <span>Inova Reborn</span>
+                              <span>{formData.model || '-'}</span>                  
 
                               <span className="text-gray-500">Varian</span>
-                              <span>2.4 V Diesel A/T</span>
+                              <span>{formData.varian || '-'}</span>                 
 
                               <span className="text-gray-500">Tahun Produksi</span>
-                              <span>2019</span>
+                              <span>{formData.tahunProduksi || '-'}</span>                  
 
                               <span className="text-gray-500">Warna Mobil</span>
-                              <span>Silver Metalik</span>
+                              <span>{formData.warna || '-'}</span>                  
 
                               <span className="text-gray-500">Keterangan</span>
-                              <span>
-                                Mobil ini sedang saya incar dari penjual/showroom di area Jogja. Saya ingin memastikan kondisi keseluruhan mobil, baik eksterior, interior, mesin, kaki-kaki, dan kelengkapan dokumennya sebelum mengambil keputusan untuk membeli. Diajukan untuk pengecekan menyeluruh agar terhindar dari risiko beli mobil bermasalah.
-                              </span>
+                              <span>{formData.keterangan || '-'}</span>
                             </div>
-                          </div>
+                          </div>                    
 
                           {/* Lokasi & Waktu */}
                           <div>
                             <p className="text-sm text-[#E47F3A] mb-3">Lokasi & Waktu</p>
                             <div className="grid grid-cols-[150px_1fr] gap-y-2 gap-x-4">
                               <span className="text-gray-500">Alamat</span>
-                              <span>
-                                Bulaksumur, Kec. Depok, Kabupaten Sleman,
-                                Daerah Istimewa Yogyakarta 55281
-                              </span>
+                              <span>{formData.alamat || '-'}</span>                 
 
                               <span className="text-gray-500">Tanggal Inspeksi</span>
-                              <span>23/08/2025</span>
+                              <span>{formData.tanggal || '-'}</span>                    
 
                               <span className="text-gray-500">Pukul</span>
-                              <span>13.00</span>
+                              <span>{formData.jam || '-'}</span>
                             </div>
-                          </div>
-                        </div>
+                          </div>                    
+
+                          {/* Peringatan Data yang Belum Terisi */}
+                          {(
+                            !formData.name ||
+                            !formData.phone ||
+                            !formData.email ||
+                            !formData.merek ||
+                            !formData.model ||
+                            !formData.varian ||
+                            !formData.tahunProduksi ||
+                            !formData.warna ||
+                            !formData.alamat ||
+                            !formData.tanggal ||
+                            !formData.jam
+                          ) && (
+                            <div className="text-red-500 text-sm mt-4">
+                              <p>Perhatian! Beberapa data belum terisi:</p>
+                              <ul>
+                                {!formData.name && <li>- Nama</li>}
+                                {!formData.phone && <li>- No. HP</li>}
+                                {!formData.email && <li>- Email</li>}
+                                {!formData.merek && <li>- Merek Mobil</li>}
+                                {!formData.model && <li>- Model Mobil</li>}
+                                {!formData.varian && <li>- Varian Mobil</li>}
+                                {!formData.tahunProduksi && <li>- Tahun Produksi</li>}
+                                {!formData.warna && <li>- Warna Mobil</li>}
+                                {!formData.alamat && <li>- Alamat</li>}
+                                {!formData.tanggal && <li>- Tanggal Inspeksi</li>}
+                                {!formData.jam && <li>- Pukul</li>}
+                              </ul>
+                            </div>
+                          )}
+                        </>
+                      </div>
                     )}
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className=" px-4 py-3 sm:flex sm:justify-end sm:gap-3 sm:px-6">
-              <button
-                type="button"
-                onClick={onClose}
-                className="inline-flex justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white hover:bg-red-500"
-              >
-                Batal
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                    if (formData.name && formData.phone && formData.email) {
-                      setActiveTab('data-mobil');
-                    } else {
-                      alert('Mohon lengkapi semua data diri.');
-                    }
-                  }}
-                className="inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-gray-300 hover:bg-gray-50"
-              >
-                Selanjutnya
-              </button>
+            <div className="px-4 pt-3 pb-5 sm:flex sm:justify-end sm:gap-3 sm:px-6">
+            {currentTabIndex > 0 && (
+                  <button
+                    className="px-3 py-2 bg-gray-200 rounded cursor-pointer text-sm hover:bg-gray-400 hover:text-white"
+                    onClick={goToPreviousTab}
+                  >
+                    Kembali
+                  </button>
+                )}
+
+                {currentTabIndex < tabs.length - 1 ? (
+                  <button
+                    className="px-3 py-2 bg-blue-600 text-white rounded cursor-pointer text-sm hover:bg-blue-500 hover:text-white" 
+                    onClick={goToNextTab}
+                  >
+                    Selanjutnya
+                  </button>
+                ) : (
+                    (
+                        (!formData.name || !formData.phone || !formData.email || !formData.merek || !formData.model || !formData.varian || !formData.tahunProduksi || !formData.warna || !formData.alamat || !formData.tanggal || !formData.jam) ? (
+                          <button
+                            className="px-3 py-2 bg-gray-400 text-white rounded cursor-not-allowed text-sm"
+                            disabled
+                          >
+                            Kirim
+                          </button>
+                        ) : (
+                          <button
+                            className="px-3 py-2 bg-green-600 text-white rounded cursor-pointer text-sm hover:bg-green-500"
+                            onClick={handleSubmitToWhatsApp}
+                          >
+                            Kirim
+                          </button>
+                        )
+                    )
+                )}
             </div>
           </DialogPanel>
         </div>
