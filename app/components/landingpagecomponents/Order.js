@@ -1,4 +1,4 @@
-export default function Order(){
+export default function Order({ onOpenModal }){
     return (
         <div className="bg-[#192459]">
             <div className="pt-3 md:flex md:items-center  md:max-w-5xl md:mx-auto">
@@ -27,7 +27,7 @@ export default function Order(){
                     </div>
                     <a href="#">
                         <div className="mt-12 flex justify-center">
-                            <button className="py-2 px-6 rounded-full bg-[#FDB913] font-semibold cursor-pointer hover:bg-[#C8910C]">Pesan Sekarang</button>
+                            <button onClick={onOpenModal} className="py-2 px-6 rounded-full bg-[#FDB913] font-semibold cursor-pointer hover:bg-[#C8910C]">Pesan Sekarang</button>
                         </div>
                     </a>
                 </div>       
