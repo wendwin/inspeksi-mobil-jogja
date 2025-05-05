@@ -21,14 +21,14 @@ export default function Hero() {
     >
       <div className="absolute inset-0 bg-black/30 pointer-events-none" />
       <nav className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-sm">
-        <div className="flex items-center gap-4 mt-5 md:mt-2">
+        <div className="flex items-center gap-4 mt-5 md:mt-0">
           <img
             src="/img/logo.png"
             alt="Logo"
-            className="w-16 h-16  object-contain"
+            className="w-20 h-20  lg:w-24 lg:h-24 object-contain"
           />
-          <div class="">
-          <h1 className="font-semibold text-xl ">Jasa Inspeksi Jogja</h1>
+          <div>
+            <h1 className="font-semibold text-xl md:text-[16px] lg:text-lg">Jasa Inspeksi Jogja</h1>
           </div>
         </div>
 
@@ -59,15 +59,15 @@ export default function Hero() {
         </div>
       </nav>
 
-      <div className="relative z-10 px-4 mt-18 md:flex md:px-18 items-end lg:items-center gap-6">
+      <div className="relative z-10 px-4 mt-18 md:mt-10 md:flex md:px-18 items-end lg:items-center gap-6">
         <div className="text-center mb-10 md:text-start md:max-w-1/2 lg:p-10">
           <h1 className="text-lg text-[#ffffff] font-bold md:text-lg lg:text-3xl lg:mb-1">Beli mobil bekas? </h1>
           <h1 className="text-lg text-[#ffffff] font-bold md:text-lg lg:text-3xl mb-2 lg:mb-5">Biar kami bantu cekin dulu!</h1>
           <div className="text-center md:text-start lg:max-w-[350]">
             <p className="text-sm text-[#f4f4f4] lg:text-base mb-4 md:text-white">Inspeksi Mobil Jogja hadir untuk bantu kamu, cek kondisi mobil secara menyeluruh. Mulai dari bodi, mesin, interior, sampai dokumen. <br/>Harga Mulai dari: </p>
           </div>
-          <h1 className="text-xl text-white font-bold my-4 lg:text-3xl">Rp 399.900</h1>
-          <button onClick={handleSubmitToWhatsApp} className="px-4 py-3 md:px-3 md:py-2  bg-blue-500 rounded-lg transform transition-all duration-200 hover:scale-105 hover:bg-blue-900 drop-shadow-md text-sm md:text-base font-semibold cursor-pointer">
+          <h1 className="text-xl text-white font-bold my-4 lg:text-[28px]">Rp 399.900</h1>
+          <button onClick={handleSubmitToWhatsApp} className="px-4 py-3 md:px-3 md:py-2 mt-2 bg-blue-500 rounded-lg transform transition-all duration-200 hover:scale-105 hover:bg-blue-900 drop-shadow-md text-sm md:text-base font-semibold cursor-pointer">
             Hubungi Sekarang
           </button>
         </div>
