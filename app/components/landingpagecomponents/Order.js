@@ -1,7 +1,7 @@
 export default function Order({ onOpenModal }){
     return (
         <div className="bg-[#192459]">
-            <div className="p-10 md:flex md:items-center  md:max-w-5xl md:mx-auto">
+            <div className="py-10 md:flex md:items-center  md:max-w-5xl md:mx-auto">
                 <div className="my-6 px-4 mx-auto md:order-2 ">
                     <h1 className="mb-5 text-center text-xl md:text-2xl md:mb-8 font-semibold text-white">Cara Memesan Jasa Inspeksi Jogja</h1>
                     <div className="flex justify-center items-center gap-4 mb-6">
