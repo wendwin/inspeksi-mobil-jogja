@@ -3,7 +3,7 @@ import { MapPin, Instagram, Facebook, Twitter } from 'lucide-react'
 export default function Footer() {
     return (
       <section>
-        <footer className="container px-4 md:px-0 mx-auto mt-20 md:mt-50">
+        <footer className="max-w-7xl mx-auto px-4 md:px-14 lg:px-8 mt-20 md:mt-40">
             <div className="my-2 md:my-5">
                 <p className="text-md font-bold md:text-xl">Kami Siap Membantu Anda</p>
                 <div className="yellow-bar"></div>
@@ -23,14 +23,14 @@ export default function Footer() {
                     </div>
                 </div>
                 {/*Sosmed */}
-                <div className='flex gap-5 my-5 mb-10'>
+                <div className='flex gap-5 my-5 mb-5 md:mb-10'>
                     <a href=''><Instagram></Instagram></a>
                     <a href=''><Facebook></Facebook></a>
                     <a href=''><Twitter></Twitter></a>
                 </div>
-                <hr></hr>
-                <p className='text-xs text-center mt-2 '>© Copyright 2023 by JIMJ. Design by <span className='text-amber-500'>codelens.id</span></p>
         </footer>
+                <hr></hr>
+                <p className='text-xs md:text-sm text-center mt-2 '>© Copyright 2025 by JIMJ. Developed by <span className='text-amber-500'>codelens.id</span></p>
         <img className='w-full object-cover' src='/img/footer.png'></img>
       </section>
     );

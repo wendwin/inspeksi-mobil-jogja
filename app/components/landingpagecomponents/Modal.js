@@ -116,7 +116,7 @@ return (
 
                   <div >
                     {activeTab === 'data-diri' && (
-                        <div className='p-4'>
+                        <div className='p-4 text-start'>
                             <div className="rounded-lg flex items-center gap-4 mb-4">
                               <label htmlFor="name" className="text-sm text-gray-500 w-24">Nama:</label>
                               <input
@@ -154,7 +154,7 @@ return (
                       
                     )}
                     {activeTab === 'data-mobil' && (
-                      <div className='p-4'>
+                      <div className='p-4 text-start'>
                           <div className="rounded-lg flex items-center gap-4 mb-4">
                             <label htmlFor="merek" className="text-sm text-gray-500 w-24">Merek:</label>
                             <input
@@ -224,8 +224,7 @@ return (
                         </div>
                     )}
                     {activeTab === 'lokasi' && (
-                      <div className="p-4 rounded-lg">
-                        <div className='p-4'>
+                      <div className="p-4 text-start">
                             <div className="rounded-lg flex items-start gap-4 mb-4">
                               <label htmlFor="alamat" className="text-sm text-gray-500 w-24 pt-2">Alamat:</label>
                               <textarea
@@ -259,102 +258,78 @@ return (
                                 className="w-full h-8 sm:h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
                               />
                             </div>
-                        </div>
                       </div>
                     )}
                     {activeTab === 'konfirmasi' && (
-                      <div className="p-4 space-y-6 text-sm">
-                        {Object.values(formData).every(value => !value) && (
-                          <div className="text-center mb-4">Data Belum Terisi</div>
-                        )}                  
-
-                        <>
-                          {/* Data Diri */}
-                          <div>
-                            <p className="text-sm text-[#E47F3A] mb-3">Data Diri</p>
-                            <div className="grid grid-cols-[150px_1fr] gap-y-2 gap-x-4">
-                              <span className="text-gray-500">Nama</span>
-                              <span>{formData.name || '-'}</span>                   
-
-                              <span className="text-gray-500">No. HP</span>
-                              <span>{formData.phone || '-'}</span>                  
-
-                              <span className="text-gray-500">Email</span>
-                              <span>{formData.email || '-'}</span>
+                      <div className="p-4 space-y-6 text-sm text-start">
+                        {Object.values(formData).every(value => !value) ? (
+                          <div className="text-center mb-4 text-red-500">Data Belum Terisi</div>
+                        ) : (
+                          <>
+                            {/* Data Diri */}
+                            <div>
+                              <p className="text-sm text-[#E47F3A] mb-3">Data Diri</p>
+                              <div className="grid grid-cols-[150px_1fr] gap-y-2 gap-x-4">
+                                <span className="text-gray-500">Nama</span>
+                                <span>{formData.name || '-'}</span>
+                                <span className="text-gray-500">No. HP</span>
+                                <span>{formData.phone || '-'}</span>
+                                <span className="text-gray-500">Email</span>
+                                <span>{formData.email || '-'}</span>
+                              </div>
                             </div>
-                          </div>                    
-
-                          {/* Data Mobil */}
-                          <div>
-                            <p className="text-sm text-[#E47F3A] mb-3">Data Mobil</p>
-                            <div className="grid grid-cols-[150px_1fr] gap-y-2 gap-x-4">
-                              <span className="text-gray-500">Merek</span>
-                              <span>{formData.merek || '-'}</span>                  
-
-                              <span className="text-gray-500">Model</span>
-                              <span>{formData.model || '-'}</span>                  
-
-                              <span className="text-gray-500">Varian</span>
-                              <span>{formData.varian || '-'}</span>                 
-
-                              <span className="text-gray-500">Tahun Produksi</span>
-                              <span>{formData.tahunProduksi || '-'}</span>                  
-
-                              <span className="text-gray-500">Warna Mobil</span>
-                              <span>{formData.warna || '-'}</span>                  
-
-                              <span className="text-gray-500">Keterangan</span>
-                              <span>{formData.keterangan || '-'}</span>
+                        
+                            {/* Data Mobil */}
+                            <div>
+                              <p className="text-sm text-[#E47F3A] mb-3">Data Mobil</p>
+                              <div className="grid grid-cols-[150px_1fr] gap-y-2 gap-x-4">
+                                <span className="text-gray-500">Merek</span>
+                                <span>{formData.merek || '-'}</span>
+                                <span className="text-gray-500">Model</span>
+                                <span>{formData.model || '-'}</span>
+                                <span className="text-gray-500">Varian</span>
+                                <span>{formData.varian || '-'}</span>
+                                <span className="text-gray-500">Tahun Produksi</span>
+                                <span>{formData.tahunProduksi || '-'}</span>
+                                <span className="text-gray-500">Warna Mobil</span>
+                                <span>{formData.warna || '-'}</span>
+                                <span className="text-gray-500">Keterangan</span>
+                                <span>{formData.keterangan || '-'}</span>
+                              </div>
                             </div>
-                          </div>                    
-
-                          {/* Lokasi & Waktu */}
-                          <div>
-                            <p className="text-sm text-[#E47F3A] mb-3">Lokasi & Waktu</p>
-                            <div className="grid grid-cols-[150px_1fr] gap-y-2 gap-x-4">
-                              <span className="text-gray-500">Alamat</span>
-                              <span>{formData.alamat || '-'}</span>                 
-
-                              <span className="text-gray-500">Tanggal Inspeksi</span>
-                              <span>{formData.tanggal || '-'}</span>                    
-
-                              <span className="text-gray-500">Pukul</span>
-                              <span>{formData.jam || '-'}</span>
+                        
+                            <div>
+                              <p className="text-sm text-[#E47F3A] mb-3">Lokasi & Waktu</p>
+                              <div className="grid grid-cols-[150px_1fr] gap-y-2 gap-x-4">
+                                <span className="text-gray-500">Alamat</span>
+                                <span>{formData.alamat || '-'}</span>
+                                <span className="text-gray-500">Tanggal Inspeksi</span>
+                                <span>{formData.tanggal || '-'}</span>
+                                <span className="text-gray-500">Pukul</span>
+                                <span>{formData.jam || '-'}</span>
+                              </div>
                             </div>
-                          </div>                    
-
-                          {/* Peringatan Data yang Belum Terisi */}
-                          {(
-                            !formData.name ||
-                            !formData.phone ||
-                            !formData.email ||
-                            !formData.merek ||
-                            !formData.model ||
-                            !formData.varian ||
-                            !formData.tahunProduksi ||
-                            !formData.warna ||
-                            !formData.alamat ||
-                            !formData.tanggal ||
-                            !formData.jam
-                          ) && (
-                            <div className="text-red-500 text-sm mt-4">
-                              <p>Perhatian! Beberapa data belum terisi:</p>
-                              <ul>
-                                {!formData.name && <li>- Nama</li>}
-                                {!formData.phone && <li>- No. HP</li>}
-                                {!formData.email && <li>- Email</li>}
-                                {!formData.merek && <li>- Merek Mobil</li>}
-                                {!formData.model && <li>- Model Mobil</li>}
-                                {!formData.varian && <li>- Varian Mobil</li>}
-                                {!formData.tahunProduksi && <li>- Tahun Produksi</li>}
-                                {!formData.warna && <li>- Warna Mobil</li>}
-                                {!formData.alamat && <li>- Alamat</li>}
-                                {!formData.tanggal && <li>- Tanggal Inspeksi</li>}
-                                {!formData.jam && <li>- Pukul</li>}
-                              </ul>
-                            </div>
-                          )}
-                        </>
+                        
+                            {Object.values(formData).some(value => !value) && (
+                              <div className="text-red-500 text-sm mt-4">
+                                <p>Perhatian! Beberapa data belum terisi:</p>
+                                <ul>
+                                  {!formData.name && <li>- Nama</li>}
+                                  {!formData.phone && <li>- No. HP</li>}
+                                  {!formData.email && <li>- Email</li>}
+                                  {!formData.merek && <li>- Merek Mobil</li>}
+                                  {!formData.model && <li>- Model Mobil</li>}
+                                  {!formData.varian && <li>- Varian Mobil</li>}
+                                  {!formData.tahunProduksi && <li>- Tahun Produksi</li>}
+                                  {!formData.warna && <li>- Warna Mobil</li>}
+                                  {!formData.alamat && <li>- Alamat</li>}
+                                  {!formData.tanggal && <li>- Tanggal Inspeksi</li>}
+                                  {!formData.jam && <li>- Pukul</li>}
+                                </ul>
+                              </div>
+                            )}
+                          </>
+                        )}
                       </div>
                     )}
                   </div>
@@ -362,7 +337,7 @@ return (
               </div>
             </div>
 
-            <div className="px-4 pt-3 pb-5 sm:flex sm:justify-end sm:gap-3 sm:px-6">
+            <div className="px-4 pt-3 pb-5 flex justify-end gap-3 sm:px-6">
             {currentTabIndex > 0 && (
                   <button
                     className="px-3 py-2 bg-gray-200 rounded cursor-pointer text-sm hover:bg-gray-400 hover:text-white"
