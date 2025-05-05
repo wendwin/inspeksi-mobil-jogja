@@ -1,7 +1,7 @@
 export default function Order({ onOpenModal }){
     return (
         <div className="bg-[#192459]">
-            <div className="pt-3 md:flex md:items-center  md:max-w-5xl md:mx-auto">
+            <div className="py-10 md:flex md:items-center  md:max-w-5xl md:mx-auto">
                 <div className="my-6 px-4 mx-auto md:order-2 ">
                     <h1 className="mb-5 text-center text-xl md:text-2xl md:mb-8 font-semibold text-white">Cara Memesan Jasa Inspeksi Jogja</h1>
                     <div className="flex justify-center items-center gap-4 mb-6">
@@ -22,7 +22,7 @@ export default function Order({ onOpenModal }){
                         <img src="/img/report_icon.png" alt="" className="w-15 h-15"/>
                         <div className=" text-white">
                             <h5 className="text-base font-semibold mb-1">Laporan Dikirim</h5>
-                            <p className="text-sm">Hasil inspeksi lengkap dikirim ke pelanggan melalui WhatsApp atau email, disertai foto dan rekomendasi teknis.</p>
+                            <p className="text-sm">Hasil inspeksi lengkap dikirim ke pelanggan melalui WhatsApp atau email, disertai foto dan rekomendasi teknis</p>
                         </div>
                     </div>
                     <a href="#">

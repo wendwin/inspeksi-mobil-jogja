@@ -50,7 +50,7 @@ export default function Modal({ open, onClose }) {
 
     const handleSubmitToWhatsApp = () => {
         const message = `
-Hallo, saya ingin memesan jasa inspeksi mobil:
+Halo, saya ingin memesan jasa inspeksi mobil:
 
 *Data Diri*
 - Nama: ${formData.name}
@@ -73,7 +73,7 @@ Hallo, saya ingin memesan jasa inspeksi mobil:
 Terimakasih.
       `;
 
-        const phoneNumber = '62895380067457'; // Ganti dengan nomor WA tujuan
+        const phoneNumber = '62895380067457';
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
       
         window.open(whatsappUrl, '_blank');
