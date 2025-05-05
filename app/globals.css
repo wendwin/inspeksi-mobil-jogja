@@ -45,3 +45,18 @@ body {
   width: 15px !important;
   transition: background-color 0.3s ease-in-out !important;
 }
+
+/* Matikan animasi di tombol WA */
+/* .floating-whatsapp-button {
+  animation: none !important;
+  box-shadow: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+.floating-whatsapp-button::after,
+.floating-whatsapp-button::before {
+  animation: none !important;
+  content: none !important;
+  display: none !important;
+} */
