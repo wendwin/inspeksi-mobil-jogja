@@ -12,6 +12,7 @@ import Modal from "./components/landingpagecomponents/Modal";
 import { useState, useEffect } from "react";
 import ImgCollection from "./components/landingpagecomponents/ImgCollection";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import Confused from "./components/landingpagecomponents/Confused";
 
 
 // jika ada compoenent baru maka lakukan import disini sesuikan nama folder dan filenya
@@ -44,6 +45,7 @@ export default function Home() {
       <Trusted />
       <Service onOpenModal={() => setIsModalOpen(true)} />
       <Order onOpenModal={() => setIsModalOpen(true)}/>
+      <Confused/>
       <Promotion/>
       <Testimoni />
       <Mitra />
