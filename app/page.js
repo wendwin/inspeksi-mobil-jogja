@@ -9,22 +9,40 @@ import Mitra from "./components/landingpagecomponents/Mitra";
 import Footer from "./components/landingpagecomponents/Footer";
 import Promotion from "./components/landingpagecomponents/Promotion";
 import Modal from "./components/landingpagecomponents/Modal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ImgCollection from "./components/landingpagecomponents/ImgCollection";
-// import 'flowbite/dist/flowbite.css';
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 
 // jika ada compoenent baru maka lakukan import disini sesuikan nama folder dan filenya
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showWhatsApp, setShowWhatsApp] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowWhatsApp(true);
+      } else {
+        setShowWhatsApp(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup listener saat unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <main className="font-sans">
       {/* tambahkan class mellaui props disni class di dapat dri compoenent yang bersangkuatan */}
       <Hero />
       <Trusted />
-      <Service />
+      <Service onOpenModal={() => setIsModalOpen(true)} />
       <Order onOpenModal={() => setIsModalOpen(true)}/>
       <Promotion/>
       <Testimoni />
@@ -32,6 +50,18 @@ export default function Home() {
       <ImgCollection/>
       <Footer />
       <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}/>
+
+      {showWhatsApp && (
+      <FloatingWhatsApp 
+        phoneNumber="62895380067457"
+        accountName="Jasa Inspeksi Jogja"
+        statusMessage="Biasanya membalas dalam 1 jam"
+        chatMessage="Halo! Ada yang bisa kami bantu?"
+        placeholder="Ketik pesan..."
+        avatar="/img/user_icon.jpg"
+        allowEsc={false}
+        allowClickAway={false} />
+      )}
     </main>
   );
 }
