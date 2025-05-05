@@ -5,6 +5,15 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 }
 
 export default function Hero() {
+  const handleSubmitToWhatsApp = () => {
+    const message = `Halo, saya ingin memesan jasa inspeksi mobil `;
+
+    const phoneNumber = '62895380067457';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  
+    window.open(whatsappUrl, '_blank');
+  };
+  
   return (
     <section
       className="relative text-white bg-cover bg-bottom max-h[100px"
@@ -58,7 +67,7 @@ export default function Hero() {
             <p className="text-sm text-[#f4f4f4] md:text-sm lg:text-base mb-8 md:text-white">Inspeksi Mobil Jogja hadir untuk bantu kamu, cek kondisi mobil secara menyeluruh. Mulai dari bodi, mesin, interior, sampai dokumen</p>
           </div>
           {/* <h1 className="text-xl text-[#192459] font-bold mt-5">Rp 399.900</h1> */}
-          <button className="px-4 py-2 md:p-2 md:py-2 lg:px-4 lg:py-2 bg-blue-500 rounded-lg transform transition-all duration-200 hover:scale-105 hover:bg-blue-900 drop-shadow-md text-sm sm:text-base">
+          <button onClick={handleSubmitToWhatsApp} className="px-4 py-3 md:px-4 md:py-2 lg:px-4 lg:py-3 bg-blue-500 rounded-lg transform transition-all duration-200 hover:scale-105 hover:bg-blue-900 drop-shadow-md text-sm md:text-base font-semibold cursor-pointer">
   Hubungi Sekarang
 </button>
 

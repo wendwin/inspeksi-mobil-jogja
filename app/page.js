@@ -42,7 +42,7 @@ export default function Home() {
       {/* tambahkan class mellaui props disni class di dapat dri compoenent yang bersangkuatan */}
       <Hero />
       <Trusted />
-      <Service />
+      <Service onOpenModal={() => setIsModalOpen(true)} />
       <Order onOpenModal={() => setIsModalOpen(true)}/>
       <Promotion/>
       <Testimoni />

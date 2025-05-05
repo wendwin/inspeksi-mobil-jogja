@@ -1,4 +1,4 @@
-export default function Service() {
+export default function Service({ onOpenModal }) {
     return (
         <section className="max-w-7xl mx-auto px-4 md:px-14 lg:px-8 my-5 md:my-20">
             <div className="my-2 md:my-5">
@@ -14,7 +14,7 @@ export default function Service() {
                         <p className="uppercase text-base text-amber-500 font-medium my-3 md:text-xl">Promo</p>
                         <p className="uppercase text-base text-gray-500 line-through font-medium md:text-xl">RP 439.900</p>
                         <p className="uppercase text-md text-black font-bold my-3 md:text-2xl transform transition-all duration-200 group-hover:scale-105">RP 399.000</p>
-                        <button className="uppercase rounded-lg bg-amber-500 p-3 font-medium text-sm text-black poin md:text-base transform transition-all duration-200 hover:scale-105 hover:bg-amber-900 hover:text-white">Booking Sekarang</button>
+                        <button onClick={onOpenModal} className="uppercase rounded-lg bg-amber-500 p-3 font-medium text-sm text-black poin md:text-base transform transition-all duration-200 hover:scale-105 hover:bg-amber-900 hover:text-white cursor-pointer">Booking Sekarang</button>
                         <div className="card-actions justify-end">
                         </div>
                     </div>
@@ -27,7 +27,7 @@ export default function Service() {
                         <p className="uppercase text-base text-amber-500 font-medium my-3 md:text-xl">Promo</p>
                         <p className="uppercase text-base text-gray-500 line-through font-medium md:text-xl">RP 519.900</p>
                         <p className="uppercase text-md text-black font-bold my-3 md:text-2xl transform transition-all duration-200 group-hover:scale-105">RP 459.000</p>
-                        <button className="uppercase rounded-lg bg-amber-500 p-3 font-medium text-sm text-black poin md:text-base transform transition-all duration-200 hover:scale-105 hover:bg-amber-900 hover:text-white">Booking Sekarang</button>
+                        <button onClick={onOpenModal} className="uppercase rounded-lg bg-amber-500 p-3 font-medium text-sm text-black poin md:text-base transform transition-all duration-200 hover:scale-105 hover:bg-amber-900 hover:text-white cursor-pointer">Booking Sekarang</button>
                         <div className="card-actions justify-end">
                         </div>
                     </div>
@@ -40,7 +40,7 @@ export default function Service() {
                         <p className="uppercase text-base text-amber-500 font-medium my-3 md:text-xl">Promo</p>
                         <p className="uppercase text-base text-gray-500 line-through font-medium md:text-xl">RP 659.900</p>
                         <p className="uppercase text-md text-black font-bold my-3 md:text-2xl transform transition-all duration-200 group-hover:scale-105">RP 550.000</p>
-                        <button className="uppercase rounded-lg bg-amber-500 p-3 font-medium text-sm text-black poin md:text-base transform transition-all duration-200 hover:scale-105 hover:bg-amber-900 hover:text-white">Booking Sekarang</button>
+                        <button onClick={onOpenModal} className="uppercase rounded-lg bg-amber-500 p-3 font-medium text-sm text-black poin md:text-base transform transition-all duration-200 hover:scale-105 hover:bg-amber-900 hover:text-white cursor-pointer">Booking Sekarang</button>
                         <div className="card-actions justify-end">
                         </div>
                     </div>
