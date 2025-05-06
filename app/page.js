@@ -26,10 +26,11 @@ export default function Home() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       AOS.init();
-      AOS.refresh(); // ini penting jika konten muncul setelah initial render
+      AOS.refresh();
     }
   }, []);
   
+
 
   useEffect(() => {
     const handleScroll = () => {

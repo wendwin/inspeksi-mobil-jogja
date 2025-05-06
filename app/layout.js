@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Inspeksi Mobil Jogja",
   description: "Temukan Insepksi terbaik untuk mobil anda bersama kami",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
