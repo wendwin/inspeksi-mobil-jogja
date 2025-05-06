@@ -5,7 +5,7 @@ export default function Service({ onOpenModal }) {
                 <p className="text-md font-bold md:text-xl">Layanan Kami</p>
                 <div className="yellow-bar"></div>
             </div>
-            <div className="py-5 md:py-10 flex flex-wrap justify-center gap-7 md:gap-7">
+            <div className="py-5 md:py-10 flex flex-wrap justify-center gap-7 md:gap-7" data-aos="fade-up">
                 <div className="card bg-base-100 shadow-lg max-w-70 mx-auto md:mx-0 md:max-w-75  transform transition-all duration-200 hover:scale-105 group">
                     <div className="card-body border-gray-300 border-1 bg-white text-center rounded-xl py-5 px-2 md:min-h-95">
                         <h2 className="card-title text-black text-md py-2 font-medium uppercase md:text-xl">Reguler Car</h2>

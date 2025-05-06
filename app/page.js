@@ -13,6 +13,8 @@ import { useState, useEffect } from "react";
 import ImgCollection from "./components/landingpagecomponents/ImgCollection";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Confused from "./components/landingpagecomponents/Confused";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 // jika ada compoenent baru maka lakukan import disini sesuikan nama folder dan filenya
@@ -20,6 +22,8 @@ import Confused from "./components/landingpagecomponents/Confused";
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showWhatsApp, setShowWhatsApp] = useState(false);
+
+  AOS.init();
 
   useEffect(() => {
     const handleScroll = () => {
