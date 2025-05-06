@@ -25,7 +25,8 @@ export default function Home() {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      AOS.init()
+      AOS.init();
+      AOS.refresh();
     }
   }, [])
 
