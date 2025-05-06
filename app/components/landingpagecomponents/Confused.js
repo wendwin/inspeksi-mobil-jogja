@@ -97,6 +97,7 @@ export default function Confused(){
             </div>
             <div className="mt-16 md:mt-0" data-aos="fade-left">
                 <img src="/img/car_confused.png" alt=""/>
+>>>>>>> fa8940b0f207be872d013e1affcd89334a56e4be
             </div>
             <p p className="md:text-sm lg:text-[16px]">
               Langsung ditangani oleh teknisi berpengalaman, bukan admin biasa
