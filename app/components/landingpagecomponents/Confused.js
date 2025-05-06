@@ -10,7 +10,7 @@ export default function Confused(){
 
     return (
         <div className="max-w-7xl mx-auto px-4 md:px-14 lg:px-8 my-20 lg:my-28 md:flex justify-evenly items-center md:gap-18">
-            <div>
+            <div data-aos="fade-right">
                 <h1 className="text-xl font-bold text-[#192459] mb-1 md:text-2xl lg:text-3xl">Masih bingung atau ragu?</h1>
                 <h5 className="text-base font-semibold text-[#192459] md:text-lg lg:text-xl">Tenang, tim kami siap diajak ngobrol! Konsultasi santai dulu aja, GRATIS!</h5>
                 <div className="mt-5 flex gap-2 mb-3 ">
@@ -49,7 +49,7 @@ export default function Confused(){
                     <button onClick={handleSubmitToWhatsApp} className="py-2 px-6 rounded-full bg-[#FDB913] font-semibold cursor-pointer hover:bg-[#C8910C]">Konsultasi Sekarang</button>
                 </div>
             </div>
-            <div className="mt-16 md:mt-0">
+            <div className="mt-16 md:mt-0" data-aos="fade-left">
                 <img src="/img/car_confused.png" alt=""/>
             </div>
         </div>       
