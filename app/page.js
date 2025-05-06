@@ -23,7 +23,11 @@ export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showWhatsApp, setShowWhatsApp] = useState(false);
 
-  AOS.init();
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      AOS.init()
+    }
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
