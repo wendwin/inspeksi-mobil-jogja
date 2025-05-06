@@ -9,7 +9,7 @@ export default function Confused(){
     };
 
     return (
-      <div className="max-w-7xl mx-auto px-4 md:px-14 lg:px-8 my-20 lg:my-28 md:flex justify-evenly items-center md:gap-18">
+      <div className="max-w-6xl mx-auto px-4 md:px-14 lg:px-8 my-20 lg:my-28 md:flex justify-evenly items-center md:gap-18">
         <div data-aos="fade-right">
           <h1 className="text-xl font-bold text-[#192459] mb-1 md:text-2xl lg:text-3xl">
             Masih bingung atau ragu?
