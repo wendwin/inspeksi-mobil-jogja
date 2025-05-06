@@ -2,7 +2,7 @@ export default function Trusted() {
     return (
         <section className=" my-5 md:mb-25">
             <p className="text-lg my-5 bg-white text-black text-center font-bold md:text-2xl md:my-20">Jasa Inspeksi Jogja Paling Terpercaya</p>
-            <div className="md:mx-0 flex flex-wrap justify-center my-10 md:my-0 gap-5 md:gap-12">
+            <div className="md:mx-0 flex flex-wrap justify-center my-10 md:my-0 gap-5 md:gap-12" data-aos="fade-up">
                 <div className="card bg-base-100 shadow-lg max-w-40 md:my-5 md:max-w-70 ">
                     <div className="card-body bg-[#192459] text-center rounded-xl py-5 px-2 md:px-4 md:min-h-85 transform transition-all duration-200 hover:scale-105 hover:bg-blue-800">
                         <h2 className="card-title text-white md:min-h-19 text-sm py-2 font-bold md:text-xl">Teknisi Berpengalaman</h2>
