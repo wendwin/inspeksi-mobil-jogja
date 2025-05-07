@@ -64,7 +64,7 @@ export default function Home() {
       <Footer />
       <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}/>
 
-      {showWhatsApp && (
+      {showWhatsApp && !isModalOpen &&(
       <FloatingWhatsApp 
         phoneNumber="62895380067457"
         accountName="Jasa Inspeksi Jogja"
