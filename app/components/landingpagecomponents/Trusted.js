@@ -1,6 +1,6 @@
 export default function Trusted() {
     return (
-        <section className="mt-28 mb-20 md:mb-18">
+        <section className="mt-28 mb-20 md:mt-32 md:mb-18 lg:mt-36">
             <p className="text-lg my-5 bg-white text-black text-center font-bold md:text-2xl md:my-15">Jasa Inspeksi Jogja Paling Terpercaya</p>
             <div className="md:mx-0 flex flex-wrap justify-center mt-10 md:my-0 gap-5 md:gap-12" data-aos="fade-up">
                 <div className="card bg-base-100 shadow-lg max-w-40 lg:my-5 md:max-w-70 ">
