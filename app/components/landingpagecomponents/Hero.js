@@ -105,7 +105,7 @@ export default function Hero() {
       className="relative text-white bg-cover bg-bottom-left h-screen lg:h-[90vh]"
       style={{ backgroundImage: "url(/img/hero2.png)" }} 
     >
-      <div className="absolute inset-0 bg-black/20">
+      <div className="absolute inset-0 bg-black/25">
         <nav className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-sm">
           <div className="flex items-center gap-4 mt-5 md:mt-0">
           <img
@@ -114,10 +114,10 @@ export default function Hero() {
             className="w-20 h-20  lg:w-24 lg:h-24 object-contain"
           />
           <div>
-            <h1 className="font-semibold text-xl md:text-[16px] lg:text-lg text-[#1c296a]">Jasa Inspeksi Jogja</h1>
+            <h1 className="font-semibold text-xl md:text-[16px] lg:text-lg text-white">Jasa Inspeksi Jogja</h1>
           </div>
           </div>
-          <div className="hidden md:flex justify-between gap-8 mt-4 md:mt-0 text-[#1c296a]">
+          <div className="hidden md:flex justify-between gap-8 mt-4 md:mt-0 text-white">
           <div className="flex items-center  gap-2">
             <PhoneIcon className="h-4 w-4" />
             <div>
@@ -131,14 +131,14 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="w-5 h-5 hover:text-white xtext-[#1c296a] " />
+              <FaInstagram className="w-5 h-5 text-white hover:text-[#1c296a] " />
             </a>
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookF className="w-5 h-5 hover:text-white text-[#1c296a]" />
+              <FaFacebookF className="w-5 h-5 text-white hover:text-[#1c296a]" />
             </a>
           </div>
           </div>
