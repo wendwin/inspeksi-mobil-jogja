@@ -156,16 +156,25 @@ return (
                     {activeTab === 'data-mobil' && (
                       <div className='p-4 text-start'>
                           <div className="rounded-lg flex items-center gap-4 mb-4">
-                            <label htmlFor="merek" className="text-sm text-gray-500 w-24">Merek:</label>
-                            <input
-                              type="text"
-                              name="merek"
-                              id="merek"
-                              value={formData.merek}
+                              <label htmlFor="merek" className="text-sm text-gray-500 w-24">Merek:</label>
+                              <select
+                                name="merek"
+                                id="merek"
+                                value={formData.merek}
                                 onChange={(e) => setFormData({ ...formData, merek: e.target.value })}
-                              className="w-full h-8 sm:h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
-                            />
-                          </div>
+                                className="w-full h-8 sm:h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
+                              >
+                                <option value="">Pilih Merek</option>
+                                <option value="Merek 1">Merek 1</option>
+                                <option value="Merek 2">Merek 2</option>
+                                <option value="Merek 3">Merek 3</option>
+                                <option value="Merek 3">Merek 4</option>
+                                <option value="Merek 3">Merek 5</option>
+                                <option value="Merek 3">Merek 6</option>
+                                <option value="Merek 3">Merek 7</option>
+                                <option value="Merek 3">Merek 8</option>
+                              </select>
+                            </div>
                           <div className="rounded-lg flex items-center gap-4 mb-4">
                             <label htmlFor="model" className="text-sm text-gray-500 w-24">Model:</label>
                             <input

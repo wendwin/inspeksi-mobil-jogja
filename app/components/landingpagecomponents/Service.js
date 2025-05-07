@@ -1,11 +1,11 @@
 export default function Service({ onOpenModal }) {
     return (
-        <section className="max-w-7xl mx-auto px-4 md:px-14 lg:px-8 my-5 md:my-20">
-            <div className="my-2 md:my-5">
+        <section className="max-w-7xl mx-auto px-4 md:px-14 lg:px-8 mb-12 md:my-20">
+            <div className="my-6 md:my-10">
                 <p className="text-md font-bold md:text-xl">Layanan Kami</p>
                 <div className="yellow-bar"></div>
             </div>
-            <div className="py-5 md:py-10 flex flex-wrap justify-center gap-7 md:gap-7" data-aos="fade-up">
+            <div className="py-5 md:py-10 flex flex-wrap justify-center gap-7 md:gap-10" data-aos="fade-up">
                 <div className="card bg-base-100 shadow-lg max-w-70 mx-auto md:mx-0 md:max-w-75  transform transition-all duration-200 hover:scale-105 group">
                     <div className="card-body border-gray-300 border-1 bg-white text-center rounded-xl py-5 px-2 md:min-h-95">
                         <h2 className="card-title text-black text-md py-2 font-medium uppercase md:text-xl">Reguler Car</h2>
