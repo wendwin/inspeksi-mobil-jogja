@@ -119,7 +119,7 @@ export default function Hero() {
           </div>
           <div className="hidden md:flex justify-between gap-8 mt-4 md:mt-0 text-[#1c296a]">
           <div className="flex items-center  gap-2">
-            <PhoneIcon className="h-4 w-4 mt-1" />
+            <PhoneIcon className="h-4 w-4" />
             <div>
               <span className="font-semibold">+62 814-5623-4999</span>
             </div>
@@ -131,23 +131,24 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="w-5 h-5 hover:text-white" />
+              <FaInstagram className="w-5 h-5 hover:text-white xtext-[#1c296a] " />
             </a>
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookF className="w-5 h-5 hover:text-white" />
+              <FaFacebookF className="w-5 h-5 hover:text-white text-[#1c296a]" />
             </a>
           </div>
           </div>
         </nav>
 
-        <div className="relative z-10 px-4 py-14 md:mt-10 md:px-18">
+        {/* <div className="relative z-10 px-4 py-14 md:mt-10 md:px-18"> */}
+        <div className="relative z-10 px-4 py-14 md:mt-10 md:px-18 lg:py-10 lg:mt-0">
           <div className="text-center ">
-            <h1 className="text-xl md:text-3xl text-[#1c296a] font-bold  lg:mb-1">Beli mobil bekas? </h1>
-            <h1 className="text-xl text-[#1c296a] font-bold md:text-3xl mb-2 md:mb-5">Biar kami bantu cekin dulu!</h1>
+            <h1 className="text-xl md:text-3xl text-white font-bold  lg:mb-1">Beli mobil bekas? </h1>
+            <h1 className="text-xl text-white font-bold md:text-3xl mb-2 md:mb-5">Biar kami bantu cekin dulu!</h1>
             <p className="text-lg text-[#f4f4f4] font-semibold md:text-xl mb-4">Harga Mulai dari:</p>
             <h1 className="text-xl md:text-2xl text-white font-bold my-4 lg:text-2xl">Rp 399.900</h1>
             <button onClick={handleSubmitToWhatsApp} className="px-4 py-3 md:px-3 md:py-2 mt-2 bg-blue-500 rounded-lg transform transition-all duration-200 hover:scale-105 hover:bg-blue-900 drop-shadow-md text-sm md:text-base font-semibold cursor-pointer">
