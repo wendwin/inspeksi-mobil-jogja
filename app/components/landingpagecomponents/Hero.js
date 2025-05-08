@@ -102,7 +102,7 @@ export default function Hero() {
 
     // </section>
     <section
-      className="relative text-white bg-cover bg-bottom-left h-screen lg:h-[90vh]"
+      className="relative text-white bg-cover bg-bottom-left h-screen"
       style={{ backgroundImage: "url(/img/hero2.png)" }} 
     >
       <div className="absolute inset-0 bg-black/25">
@@ -145,7 +145,7 @@ export default function Hero() {
         </nav>
 
         {/* <div className="relative z-10 px-4 py-14 md:mt-10 md:px-18"> */}
-        <div className="relative z-10 px-4 py-14 md:mt-10 md:px-18 lg:py-10 lg:mt-0">
+        <div className="relative z-10 px-4 py-14 md:mt-10 md:-mb-10 md:px-18 lg:mt-0 lg:-mb-10">
           <div className="text-center ">
             <h1 className="text-xl md:text-3xl text-white font-bold  lg:mb-1">Beli mobil bekas? </h1>
             <h1 className="text-xl text-white font-bold md:text-3xl mb-2 md:mb-5">Biar kami bantu cekin dulu!</h1>
@@ -156,7 +156,7 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-evenly gap-4 text-center p-5 w-full md:p-5 md:gap-30 md:max-w-250 md:rounded-lg  bg-white shadow-md border border-gray-200">
+        <div className="absolute -bottom-10 md:-bottom-5 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-evenly gap-4 text-center p-5  w-full md:p-5 md:gap-30 md:max-w-250 md:rounded-lg  bg-white shadow-md border border-gray-200">
           <div>
             <div className="text-xl md:text-3xl font-bold text-orange-600">
               500
