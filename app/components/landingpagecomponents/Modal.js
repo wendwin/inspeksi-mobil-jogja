@@ -48,6 +48,40 @@ export default function Modal({ open, onClose }) {
         jam: ''
     });
 
+    const carOptions = {
+    'Hyundai': ['Creta', 'Stargazer / Stargazer X', 'Palisade','Santa Fe','Kona Electric','IONIQ 5 / IONIQ 6','Staria','Venue'],
+    'Isuzu': ['MU-X', 'D-Max', 'Traga'],
+    'Jaguar': ['F-PACE', 'E-PACE','I-PACE (listrik)','XF','F-TYPE'],
+    'Kia': ['Sonet','Seltos','Carens','Carnival / Grand Carnival','EV6','EV9'],
+    "Lexus": ["UX", "NX", "RX", "RZ (listrik)", "LS", "ES", "LC (convertible)", "LM (MPV premium)", "LBX"],
+    "MAN (Truk)": ["TGS (Tipper & Tractor Head)"],
+    "MINI": ["3 Door", "5 Door", "Countryman", "Electric Cooper", "Electric Countryman"],
+    "Peugeot": ["2008", "3008", "5008"],
+    "Nissan": ["Livina", "X-Trail", "Serena", "Kicks e-POWER", "Magnite", "Terra", "Leaf (listrik)"],
+    "Opel (tidak aktif di pasar Indonesia)": ["Astra", "Zafira", "Corsa", "Vectra", "Blazer"],
+    "Renault": ["Kwid", "Triber", "Kiger"],
+    "Subaru": ["Forester", "Crosstrek", "Outback", "WRX", "WRX Wagon", "BRZ"],
+    "Volvo": ["XC90", "XC60", "EX30", "EX40", "EC40"],
+    "Fiat": ["500C"],
+    "Dodge": ["Journey"],
+    "Ford": ["Ranger", "Everest", "Focus", "Escape", "Fiesta"],
+    "Audi": ["A4", "A6", "Q3", "Q5", "Q7", "e-tron (listrik)"],
+    "Jeep": ["Wrangler (termasuk Rubicon)", "Compass", "Gladiator", "Grand Cherokee", "Cherokee", "Patriot", "CJ-7"],
+    "Mercedes-Benz": ["A-Class (termasuk AMG A 35, A 45)","C-Class (termasuk AMG C 63)","E-Class","S-Class","CLA-Class","GLA-Class","GLB-Class","GLC-Class (termasuk AMG GLC 43 Coupé)","GLE-Class","GLS-Class","G-Class (termasuk AMG G 63)","V-Class","Maybach GLS-Class","EQ Series (EQA, EQB, EQE, EQS)"],
+    "BMW": ["1 Series","2 Series (Gran Coupé, Coupé)","3 Series","4 Series (Coupé, Convertible)","5 Series","7 Series","X Series (X1, X3, X5, X7)","M Series (M3, M4, M5, M8)","i Series (i4, i5, i7, iX)"],
+    "Toyota Land Cruiser": ["Land Cruiser 300 (J300)","Land Cruiser Prado (J250)","Land Cruiser GR-S","Land Cruiser FJ40/FJ45 (klasik, masih populer di daerah wisata seperti Bromo)"],
+    "Toyota HiAce": ["HiAce Commuter","HiAce Premio","HiAce Luxury","HiAce Regius","Grand HiAce"],
+    "Bus (Umum di Indonesia)": ["Jetbus (Adiputro)","Skylander (New Armada)","Volvo B11R / B8R","Golden Dragon Electric Bus","Scania K-Series","Mercedes-Benz OH Series","Hino RK Series"],
+    "Volkswagen (VW)": ["Golf GTI", "Tiguan Allspace", "T-Cross", "ID. Buzz (mobil listrik)", "Polo TSI"],
+    "Mazda": ["Mazda2 (Hatchback & Sedan)","Mazda3 (Hatchback & Sedan)","Mazda6 (Elite Sedan & Estate)","CX Series: CX-3, CX-30, CX-5, CX-8, CX-9, CX-60","MX-5 RF (roadster)"],
+    "Toyota": ["Agya","Avanza","Calya","Innova (termasuk Innova Zenix)","Veloz","Rush","Raize","Fortuner","Yaris","Camry","Vios","Corolla Altis","Hilux","Alphard","Vellfire","Voxy","Hiace","Land Cruiser","bZ4X (mobil listrik)"],
+    "Daihatsu": ["Ayla","Sigra","Xenia","Terios","Rocky","Sirion","Luxio","Gran Max (Pick-Up dan Minibus)"],
+    "Honda": ["Brio","WR-V","BR-V","HR-V","CR-V","City","City Hatchback","Civic RS","Accord","e:N1 (mobil listrik)"],
+    "Mitsubishi": ["Xpander","Xpander Cross","Pajero Sport","XForce","Triton","L300","L100 EV (mobil listrik)"],
+    "Suzuki": ["Ertiga","XL7","Baleno","Ignis","Jimny","S-Presso","Carry (Pick-Up)","APV"]
+    };
+
+
     const handleSubmitToWhatsApp = () => {
         const message = `
 Halo, saya ingin memesan jasa inspeksi mobil:
@@ -165,26 +199,29 @@ return (
                                 className="w-full h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
                               >
                                 <option value="">Pilih Merek</option>
-                                <option value="Merek 1">Merek 1</option>
-                                <option value="Merek 2">Merek 2</option>
-                                <option value="Merek 3">Merek 3</option>
-                                <option value="Merek 3">Merek 4</option>
-                                <option value="Merek 3">Merek 5</option>
-                                <option value="Merek 3">Merek 6</option>
-                                <option value="Merek 3">Merek 7</option>
-                                <option value="Merek 3">Merek 8</option>
-                              </select>
+                              {Object.keys(carOptions).map((merek) => (
+                                <option key={merek} value={merek}>{merek}</option>
+                              ))}
+                            </select>
                             </div>
                           <div className="rounded-lg flex items-center gap-4 mb-4">
-                            <label htmlFor="model" className="text-sm text-gray-500 w-24">Model:</label>
-                            <input
-                              type="text"
-                              name="model"
-                              id="model"
-                              value={formData.model}
-                                onChange={(e) => setFormData({ ...formData, model: e.target.value })}
-                              className="w-full h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5"
-                            />
+                              <label htmlFor="model" className="text-sm text-gray-500 w-24">Model:</label>
+                              <select
+                                name="model"
+                                id="model"
+                                value={formData.model}
+                                onChange={(e) =>
+                                  setFormData({ ...formData, model: e.target.value })
+                                }
+                                disabled={!formData.merek}
+                                className={`w-full h-10 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block p-2.5 ${!formData.merek ? 'bg-gray-100 cursor-not-allowed' : ''}`}
+                              >
+                                <option value="">Pilih Model</option>
+                                {formData.merek &&
+                                  carOptions[formData.merek].map((model) => (
+                                    <option key={model} value={model}>{model}</option>
+                                  ))}
+                              </select>
                           </div>
                           <div className=" rounded-lg flex items-center gap-4 mb-4">
                             <label htmlFor="varian" className="text-sm text-gray-500 w-24">Varian:</label>
