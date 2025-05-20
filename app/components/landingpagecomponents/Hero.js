@@ -111,7 +111,7 @@ export default function Hero() {
           <img
             src="/img/logo_check_auto.svg"
             alt="Logo"
-            className="w-20 h-20  lg:w-30 lg:h-30 object-contain"
+            className="w-28 h-28  lg:w-30 lg:h-30 object-contain"
           />
           <div>
             {/* <h1 className="font-semibold text-xl md:text-[16px] lg:text-xl text-white">CheckAuto.id </h1> */}
