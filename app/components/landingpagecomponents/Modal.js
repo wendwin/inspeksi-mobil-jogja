@@ -165,7 +165,7 @@ return (
                             <div className="rounded-lg flex items-center gap-4 mb-4">
                               <label htmlFor="phone" className="text-sm text-gray-500 w-24">No Telp:</label>
                               <input
-                                type="text"
+                                type="number"
                                 name="phone"
                                 id="phone"
                                 value={formData.phone}
@@ -176,7 +176,7 @@ return (
                             <div className=" rounded-lg flex items-center gap-4 mb-4">
                               <label htmlFor="email" className="text-sm text-gray-500 w-24">Email:</label>
                               <input
-                                type="text"
+                                type="email"
                                 name="email"
                                 id="email"
                                 value={formData.email}
@@ -237,7 +237,7 @@ return (
                           <div className=" rounded-lg flex items-center gap-4 mb-4">
                             <label htmlFor="tahunProduksi" className="text-sm text-gray-500 w-24">Tahun Produksi:</label>
                             <input
-                              type="text"
+                              type="number"
                               name="tahunProduksi"
                               id="tahunProduksi"
                               value={formData.tahunProduksi}
