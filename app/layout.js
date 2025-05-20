@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Inspeksi Mobil Jogja",
+  title: "Checkauto.id",
   description: "Temukan Insepksi terbaik untuk mobil anda bersama kami",
   icons: {
     icon: "/favicon.ico",

@@ -105,16 +105,16 @@ export default function Hero() {
       className="relative text-white bg-cover bg-bottom-left bg-no-repeat h-screen"
       style={{ backgroundImage: "url(/img/hero_car.png)" }} 
     >
-      <div className="absolute inset-0 bg-black/20">
+      <div className="absolute inset-0 bg-black/5">
         <nav className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-sm">
           <div className="flex items-center gap-4 mt-5 md:mt-0">
           <img
-            src="/img/check_auto.svg"
+            src="/img/logo_check_auto.svg"
             alt="Logo"
-            className="w-20 h-20  lg:w-24 lg:h-24 object-contain"
+            className="w-20 h-20  lg:w-30 lg:h-30 object-contain"
           />
           <div>
-            <h1 className="font-semibold text-xl md:text-[16px] lg:text-xl text-white">CheckAuto</h1>
+            {/* <h1 className="font-semibold text-xl md:text-[16px] lg:text-xl text-white">CheckAuto.id </h1> */}
           </div>
           </div>
           <div className="hidden md:flex justify-between gap-8 mt-4 md:mt-0 text-white">
