@@ -1,7 +1,7 @@
 export default function Service({ onOpenModal }) {
     return (
         <section className="max-w-7xl mx-auto px-4 md:px-14 lg:px-8 mb-12 md:my-20">
-            <div className="my-6 md:my-10">
+            <div className="my-6 md:my-6">
                 <p className="text-md font-bold md:text-xl">Layanan Kami</p>
                 <div className="yellow-bar"></div>
             </div>
