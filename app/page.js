@@ -15,6 +15,7 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Confused from "./components/landingpagecomponents/Confused";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import CountNumber from "./components/landingpagecomponents/CountNumber";
 
 
 // jika ada compoenent baru maka lakukan import disini sesuikan nama folder dan filenya
@@ -53,6 +54,7 @@ export default function Home() {
     <main className="font-sans">
       {/* tambahkan class mellaui props disni class di dapat dri compoenent yang bersangkuatan */}
       <Hero />
+      <CountNumber/>
       <Trusted />
       <Service onOpenModal={() => setIsModalOpen(true)} />
       <Order onOpenModal={() => setIsModalOpen(true)}/>
