@@ -32,7 +32,7 @@ export default function Order({ onOpenModal }){
                     </a>
                 </div>       
                 <div className="max-w-md md:flex-2/4 md:order-1">
-                    <img className="block mx-auto w-4/5 md:w-full" src="/img/inspector1_homepage.png" alt="" />
+                    <img className="block mx-auto w-4/5 md:w-full" src="/img/inspector1_homepage.webp" alt="" />
                 </div>    
             </div>
         </div>
