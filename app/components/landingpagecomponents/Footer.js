@@ -1,4 +1,4 @@
-import { MapPin, Instagram, Facebook, Twitter } from 'lucide-react'
+import { MapPin, Timer, PhoneCall, Instagram, Facebook, Twitter } from 'lucide-react'
 
 export default function Footer() {
     return (
@@ -8,7 +8,7 @@ export default function Footer() {
                 <p className="text-md font-bold md:text-xl">Kami Siap Membantu Anda</p>
                 <div className="yellow-bar"></div>
             </div>
-                <div className='flex flex-col md:flex-row justify-between my-5 md:my-10'>
+                <div className='flex flex-col md:flex-row justify-between my-3 md:my-5'>
                     <div className='md:w-105'>
                         <p className='text-sm md:text-lg font-bold'>Hubungi <span className="underline">08145623499</span></p>
                         <p className='text-xs md:text-base'>Konsultasi & Booking Inspeksi Mobil</p>
@@ -22,15 +22,33 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                {/*Sosmed */}
-                <div className='flex gap-5 my-5 mb-5 md:mb-10'>
-                    <a href=''><Instagram></Instagram></a>
-                    <a href=''><Facebook></Facebook></a>
-                    <a href=''><Twitter></Twitter></a>
-                </div>
+                <div className='flex flex-col md:flex-row md:justify-between md:items-center my-3 md:my-5'>
+                    <div className='md:max-w-105 flex flex-col gap-1'>
+                        <div className='md:flex'>
+                            <MapPin className='w-10 hidden md:block'></MapPin>
+                           <p className='text-xs md:text-base'>Layanan di Jabodetabek, Bandung, Surabaya</p>
+                        </div>
+                        <div className='md:flex'>
+                            <Timer className='w-10 hidden md:block'></Timer>
+                            <p className='text-xs md:text-base'>Jadwal Fleksibel – Bisa Weekend</p>
+                        </div>
+                        <div className='md:flex'>
+                            <PhoneCall className='w-10 hidden md:block'></PhoneCall>
+                            <p className='text-xs md:text-base'>CS Responsif via WhatsApp</p>
+                        </div>
+                    </div>
+
+
+                    {/*Sosmed */}
+                    <div className='flex gap-5 my-5 mb-5 md:mb-10'>
+                        <a href=''><Instagram></Instagram></a>
+                        <a href=''><Facebook></Facebook></a>
+                        <a href=''><Twitter></Twitter></a>
+                    </div>
+            </div>
         </footer>
                 <hr></hr>
-                <p className='text-xs md:text-sm text-center mt-2 '>© Copyright 2025 by JIMJ. Developed by <span className='text-amber-500'>codelens.id</span></p>
+                <p className='text-xs md:text-sm text-center mt-3 '>© Copyright 2025 by JIMJ. Developed by <span className='text-amber-500'>codelens.id</span></p>
         <img className='w-full object-cover' src='/img/footer.png'></img>
       </section>
     );
