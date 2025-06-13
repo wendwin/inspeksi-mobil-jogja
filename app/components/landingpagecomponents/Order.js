@@ -1,28 +1,29 @@
 export default function Order({ onOpenModal }){
     return (
         <div className="bg-[#192459]">
-            <div className="py-10 md:flex md:items-center  md:max-w-5xl md:mx-auto">
+            <div className="py-10 md:flex md:items-center text-start  md:max-w-5xl md:mx-auto">
                 <div className="my-6 px-4 mx-auto md:order-2 ">
-                    <h1 className="mb-5 text-center text-xl md:text-2xl md:mb-8 font-semibold text-white">Cara Memesan Jasa Inspeksi Jogja</h1>
-                    <div className="flex justify-center items-center gap-4 mb-6">
-                        <img src="/img/booking_icon.png" alt="booking-icon" className="w-15 h-15"/>
+                    <h1 className="mb-5 text-center text-xl md:text-2xl md:mb-8 font-semibold text-white">Cara Pemesanan</h1>
+                    <h5 className="text-white md:text-start text-center mb-10 md:mb-4 font-semibold">3 Langkah Mudah:</h5>
+                    <div className="flex md:justify-start justify-center items-center gap-4 mb-6">
+                        <img src="/img/report_icon.png" alt="booking-icon" className="w-15 h-15"/>
                         <div className="text-white">
-                            <h5 className="text-base font-semibold mb-1">Booking Inspeksi</h5>
-                            <p className="text-sm">Pelanggan mengisi formulir atau menghubungi tim untuk menjadwalkan inspeksi sesuai lokasi dan waktu yang diinginkan</p>
+                            <h5 className="text-base font-semibold mb-1">Pilih Paket & Isi Formulir</h5>
+                            <p className="text-sm">Tentukan lokasi & waktu inspeksi.</p>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center gap-4 mb-6">
+                    <div className="flex md:justify-start justify-center items-center gap-4 mb-6">
                         <img src="/img/inspeksi_icon.png" alt="" className="w-15 h-15"/>
                         <div className="text-white">
-                            <h5 className="text-base font-semibold mb-1">Pelaksanaan Inspeksi</h5>
-                            <p className="text-sm">Tim teknisi datang ke lokasi dan melakukan pemeriksaan menyeluruh terhadap kendaraan</p>
+                            <h5 className="text-base font-semibold mb-1">Tim Kami Datang ke Lokasi</h5>
+                            <p className="text-sm">Mekanik ahli memeriksa 150+ titik penting mobil Anda.</p>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center gap-4 mb-6">
-                        <img src="/img/report_icon.png" alt="" className="w-15 h-15"/>
+                    <div className="flex md:justify-start justify-center items-center gap-4 mb-6">
+                        <img src="/img/stats-report.svg" alt="" className="w-15 h-15 "/>
                         <div className=" text-white">
-                            <h5 className="text-base font-semibold mb-1">Laporan Dikirim</h5>
-                            <p className="text-sm">Hasil inspeksi lengkap dikirim ke pelanggan melalui WhatsApp atau email, disertai foto dan rekomendasi teknis</p>
+                            <h5 className="text-base font-semibold mb-1">Terima Laporan Lengkap</h5>
+                            <p className="text-sm">Hasil inspeksi dikirim via email & WhatsApp – jujur, rinci, & mudah dipahami.</p>
                         </div>
                     </div>
                     <a href="#">
