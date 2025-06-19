@@ -13,6 +13,7 @@ import { useState, useEffect } from "react";
 import ImgCollection from "./components/landingpagecomponents/ImgCollection";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Confused from "./components/landingpagecomponents/Confused";
+import Ready from "./components/landingpagecomponents/Ready";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import CountNumber from "./components/landingpagecomponents/CountNumber";
@@ -62,6 +63,7 @@ export default function Home() {
       <Promotion/>
       <Testimoni />
       <Mitra />
+      <Ready onOpenModal={() => setIsModalOpen(true)}/>
       <ImgCollection/>
       <Footer />
       <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}/>
