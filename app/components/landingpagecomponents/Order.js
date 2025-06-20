@@ -3,8 +3,7 @@ export default function Order({ onOpenModal }){
         <div className="bg-[#192459]">
             <div className="py-10 md:flex md:items-center text-start  md:max-w-5xl md:mx-auto">
                 <div className="my-6 px-4 mx-auto md:order-2 ">
-                    <h1 className="mb-5 text-center text-xl md:text-2xl md:mb-8 font-semibold text-white">Cara Pemesanan</h1>
-                    <h5 className="text-white md:text-start text-center mb-10 md:mb-4 font-semibold">3 Langkah Mudah:</h5>
+                    <h1 className="mb-5 text-center text-xl md:text-2xl md:mb-8 font-semibold text-white">3 Langkah Mudah  Memesan Jasa Inspeksi </h1>
                     <div className="flex md:justify-start justify-center items-center gap-4 mb-6">
                         <img src="/img/report_icon.png" alt="booking-icon" className="w-15 h-15"/>
                         <div className="text-white">
