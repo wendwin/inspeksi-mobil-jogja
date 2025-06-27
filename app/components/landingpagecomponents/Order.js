@@ -8,21 +8,21 @@ export default function Order({ onOpenModal }){
                         <img src="/img/report_icon.png" alt="booking-icon" className="w-15 h-15"/>
                         <div className="text-white">
                             <h5 className="text-base font-semibold mb-1">Pilih Paket & Isi Formulir</h5>
-                            <p className="text-sm">Tentukan lokasi & waktu inspeksi.</p>
+                            <p className="text-base">Tentukan lokasi & waktu inspeksi.</p>
                         </div>
                     </div>
                     <div className="flex md:justify-start justify-center items-center gap-4 mb-6">
                         <img src="/img/inspeksi_icon.png" alt="" className="w-15 h-15"/>
                         <div className="text-white">
                             <h5 className="text-base font-semibold mb-1">Tim Kami Datang ke Lokasi</h5>
-                            <p className="text-sm">Mekanik ahli memeriksa 150+ titik penting mobil Anda.</p>
+                            <p className="text-base">Mekanik ahli memeriksa 150+ titik penting mobil Anda.</p>
                         </div>
                     </div>
                     <div className="flex md:justify-start justify-center items-center gap-4 mb-6">
                         <img src="/img/stats-report.svg" alt="" className="w-15 h-15 "/>
                         <div className=" text-white">
                             <h5 className="text-base font-semibold mb-1">Terima Laporan Lengkap</h5>
-                            <p className="text-sm">Hasil inspeksi dikirim via email & WhatsApp – jujur, rinci, & mudah dipahami.</p>
+                            <p className="text-base">Hasil inspeksi dikirim via email & WhatsApp – jujur, rinci, & mudah dipahami.</p>
                         </div>
                     </div>
                     <a href="#">

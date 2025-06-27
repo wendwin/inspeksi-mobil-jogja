@@ -4,7 +4,7 @@ export default function Footer() {
     return (
       <section>
         <footer className="max-w-7xl mx-auto px-4 md:px-14 lg:px-8 mt-20 md:mt-40">
-            <div className="my-2 md:my-5">
+            <div className="my-6 md:my-5">
                 <p className="text-md font-bold md:text-xl">Kami Siap Membantu Anda</p>
                 <div className="yellow-bar"></div>
             </div>

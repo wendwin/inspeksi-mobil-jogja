@@ -26,7 +26,7 @@ export default function Confused() {
       </div>
 
       <div className="w-full md:w-1/2">
-        <p className="text-sm md:text-lg text-justify px-2 md:px-0">
+        <p className="text-base md:text-lg text-justify px-2 md:px-0">
           Kami terdiri dari mekanik berpengalaman, insinyur otomotif, dan pecinta mobil yang berdedikasi membantu Anda membeli mobil bekas dengan penuh keyakinan. Tanpa afiliasi dengan showroom mana pun, kami menjunjung tinggi objektivitas demi kepentingan Anda.
         </p>
       </div>

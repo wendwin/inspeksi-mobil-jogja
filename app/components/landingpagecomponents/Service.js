@@ -44,7 +44,7 @@ export default function Service({ onOpenModal }) {
                             Inspeksi Lengkap 150+ Titik
                         </h2>
                         <img className="mx-auto py-3 md:py-6 max-w-[100px] md:max-w-[150px]" src="/img/layanan1.png" alt="inspeksi_lengkap" />
-                        <p className="text-sm text-black my-2 md:text-base transform transition-all duration-200 group-hover:scale-105">
+                        <p className=" text-black my-2 text-base transform transition-all duration-200 group-hover:scale-105">
                             Dari mesin, kaki-kaki, kelistrikan, hingga interior dan eksterior. Kami cek semuanya
                         </p>
                     </div>
@@ -57,7 +57,7 @@ export default function Service({ onOpenModal }) {
                             Laporan Digital & Foto Detail
                         </h2>
                         <img className="mx-auto py-3 md:py-6 max-w-[100px] md:max-w-[150px]" src="/img/layanan2.png" alt="laporan_foto" />
-                        <p className="text-sm text-black my-2 md:text-base transform transition-all duration-200 group-hover:scale-105">
+                        <p className=" text-black my-2 text-base transform transition-all duration-200 group-hover:scale-105">
                             Dapatkan hasil pemeriksaan langsung di HP Anda lengkap, jelas dan transparan.
                         </p>
                     </div>
@@ -70,7 +70,7 @@ export default function Service({ onOpenModal }) {
                             Bisa Datang ke Lokasi Mobil
                         </h2>
                         <img className="mx-auto py-3 md:py-6 max-w-[100px] md:max-w-[150px]" src="/img/layanan3.png" alt="lokasi" />
-                        <p className="text-sm text-black my-2 md:text-base transform transition-all duration-200 group-hover:scale-105">
+                        <p className=" text-black my-2 text-base transform transition-all duration-200 group-hover:scale-105">
                             Mobilnya di rumah penjual? Tenang, tim kami bisa ke sana.
                         </p>
                     </div>
