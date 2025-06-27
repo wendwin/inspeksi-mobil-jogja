@@ -9,7 +9,7 @@ import { Star, StarHalf, StarOff } from 'lucide-react'
 
 export default function Testimoni() {
   return (
-    <section className='max-w-7xl mx-auto px-4 md:px-14 lg:px-8 my-5 md:my-20'>
+    <section className='max-w-7xl mx-auto px-4 md:px-14 lg:px-8 my-16 md:my-20'>
         <div className="my-2 md:my-5">
             <p className="text-md font-bold md:text-xl">Testimoni</p>
             <div className="yellow-bar"></div>
@@ -32,7 +32,7 @@ export default function Testimoni() {
                     <img className='w-10 md:w-15 -mt-10' src='/img/testimoni1.png' />
                     <img className='w-5 md:w-10 -mt-15' src='/img/kutip.svg' />
                     </div>
-                    <p className='text-justify my-3'>“Proses mudah & teknisinya detail banget. Worth every penny.”</p>
+                    <p className='text-justify my-3 text-sm md:text-base'>“Proses mudah & teknisinya detail banget. Worth every penny.”</p>
                 </div>
                 <div className="flex flex-col items-start">
                     <div className="flex items-center gap-1 text-yellow-400 mb-2">
@@ -52,7 +52,7 @@ export default function Testimoni() {
                     <img className='w-10 md:w-15 -mt-10' src='/img/testimoni2.png' />
                     <img className='w-5 md:w-10 -mt-15' src='/img/kutip.svg' />
                     </div>
-                    <p className='text-justify my-3'>“Beruntung saya pakai CekAuto.id. Mobil terlihat bagus, tapi ternyata pernah tabrakan besar. Akhirnya batal beli. Terima kasih!” </p>
+                    <p className='text-justify my-3 text-sm md:text-base'>“Beruntung saya pakai CekAuto.id. Mobil terlihat bagus, tapi ternyata pernah tabrakan besar. Akhirnya batal beli. Terima kasih!” </p>
                 </div>
                 <div className="flex flex-col items-start">
                     <div className="flex items-center gap-1 text-yellow-400 mb-2">
@@ -76,7 +76,7 @@ export default function Testimoni() {
                     <img className='w-10 md:w-15 -mt-10' src='/img/testimoni1.png' />
                     <img className='w-5 md:w-10 -mt-15' src='/img/kutip.svg' />
                     </div>
-                    <p className='text-justify my-3'>“Proses mudah & teknisinya detail banget. Worth every penny.”</p>
+                    <p className='text-justify my-3 text-sm md:text-base'>“Proses mudah & teknisinya detail banget. Worth every penny.”</p>
                 </div>
                 <div className="flex flex-col items-start">
                     <div className="flex items-center gap-1 text-yellow-400 mb-2">
@@ -96,7 +96,7 @@ export default function Testimoni() {
                     <img className='w-10 md:w-15 -mt-10' src='/img/testimoni2.png' />
                     <img className='w-5 md:w-10 -mt-15' src='/img/kutip.svg' />
                     </div>
-                    <p className='text-justify my-3'>“Beruntung saya pakai CekAuto.id. Mobil terlihat bagus, tapi ternyata pernah tabrakan besar. Akhirnya batal beli. Terima kasih!” </p>
+                    <p className='text-justify my-3 text-sm md:text-base'>“Beruntung saya pakai CekAuto.id. Mobil terlihat bagus, tapi ternyata pernah tabrakan besar. Akhirnya batal beli. Terima kasih!” </p>
                 </div>
                 <div className="flex flex-col items-start">
                     <div className="flex items-center gap-1 text-yellow-400 mb-2">
