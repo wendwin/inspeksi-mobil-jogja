@@ -163,7 +163,7 @@ export default function Hero() {
     // </section>
     <section
       className="relative text-white bg-cover bg-left lg:bg-center bg-no-repeat h-screen"
-      style={{ backgroundImage: "url(/img/hero3new.png)" }}
+      style={{ backgroundImage: "url(/img/hero3new.webp)" }}
     >
       <div className="absolute inset-0 bg-black/30">
         <nav className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-sm">

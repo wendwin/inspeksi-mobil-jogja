@@ -1,6 +1,6 @@
 export default function ImgCollection(){
     return (
-        <div className="grid grid-cols-4 md:gap-2">
+        <div className="grid grid-cols-4 md:gap-2 my-16">
             <div className="col-span-2 w-full h-48 md:h-64 lg:h-72">
               <img src="/img/wpcar1.jpg" alt="img-car-1" className="w-full h-full object-cover object-center"/>
             </div>

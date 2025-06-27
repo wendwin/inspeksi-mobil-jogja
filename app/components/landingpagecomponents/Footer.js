@@ -11,30 +11,30 @@ export default function Footer() {
                 <div className='flex flex-col md:flex-row justify-between my-3 md:my-5'>
                     <div className='md:w-105'>
                         <p className='text-sm md:text-lg font-bold'>Hubungi <span className="underline">08145623499</span></p>
-                        <p className='text-xs md:text-base'>Konsultasi & Booking Inspeksi Mobil</p>
-                        <p className='text-xs md:text-base'>Senin-Jumat: 08.00-18.00, Sabtu: 08.00-12.00</p>
+                        <p className='text-sm md:text-base'>Konsultasi & Booking Inspeksi Mobil</p>
+                        <p className='text-sm md:text-base'>Senin-Jumat: 08.00-18.00, Sabtu: 08.00-12.00</p>
                     </div>
                     <div className='md:w-105 mt-3 md:mt-0'>
                         <p className='text-sm md:text-lg font-bold'>Lokasi Kami</p>
                         <div className='md:flex'>
-                            <MapPin className='w-10 hidden md:block'></MapPin>
-                            <p className='text-xs md:text-base'>Jl. Karanglo No.3, Plumbon,  Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55173</p>
+                            {/* <MapPin className='w-10 hidden md:block'></MapPin> */}
+                            <p className='text-sm md:text-base'>Jl. Karanglo No.3, Plumbon,  Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55173</p>
                         </div>
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center my-3 md:my-5'>
                     <div className='md:max-w-105 flex flex-col gap-1'>
                         <div className='md:flex'>
-                            <MapPin className='w-10 hidden md:block'></MapPin>
-                           <p className='text-xs md:text-base'>Layanan di Jabodetabek, Bandung, Surabaya</p>
+                            {/* <MapPin className='w-10 hidden md:block'></MapPin> */}
+                           <p className='text-sm md:text-base'>Layanan di Jabodetabek, Bandung, Surabaya</p>
                         </div>
                         <div className='md:flex'>
-                            <Timer className='w-10 hidden md:block'></Timer>
-                            <p className='text-xs md:text-base'>Jadwal Fleksibel – Bisa Weekend</p>
+                            {/* <Timer className='w-10 hidden md:block'></Timer> */}
+                            <p className='text-sm md:text-base'>Jadwal Fleksibel – Bisa Weekend</p>
                         </div>
                         <div className='md:flex'>
-                            <PhoneCall className='w-10 hidden md:block'></PhoneCall>
-                            <p className='text-xs md:text-base'>CS Responsif via WhatsApp</p>
+                            {/* <PhoneCall className='w-10 hidden md:block'></PhoneCall> */}
+                            <p className='text-sm md:text-base'>CS Responsif via WhatsApp</p>
                         </div>
                     </div>
 
