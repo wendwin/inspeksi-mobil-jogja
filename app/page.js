@@ -62,8 +62,8 @@ export default function Home() {
       <Confused/>
       <Promotion/>
       <Testimoni />
-      <Mitra />
       <Ready onOpenModal={() => setIsModalOpen(true)}/>
+      <Mitra />
       <ImgCollection/>
       <Footer />
       <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}/>

@@ -8,12 +8,14 @@ export default function Hero() {
   const handleSubmitToWhatsApp = () => {
     const message = `Halo, saya ingin memesan jasa inspeksi mobil `;
 
-    const phoneNumber = '62895380067457';
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  
-    window.open(whatsappUrl, '_blank');
+    const phoneNumber = "62895380067457";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
   };
-  
+
   return (
     // <section
     //   className="relative text-white bg-cover bg-bottom max-h[100px"
@@ -101,60 +103,125 @@ export default function Hero() {
     //   </div>
 
     // </section>
+    // <section
+    //   className="relative text-white bg-cover bg-bottom-left bg-no-repeat h-screen"
+    //   style={{ backgroundImage: "url(/img/hero_car4.webp)" }}
+    // >
+    //   <div className="absolute inset-0 bg-black/5">
+    //     <nav className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-sm">
+    //       <div className="flex items-center gap-4 mt-5 md:mt-0">
+    //       <img
+    //         src="/img/logo_check_auto.svg"
+    //         alt="Logo"
+    //         className="w-28 h-28  lg:w-30 lg:h-30 object-contain"
+    //       />
+    //       <div>
+    //         {/* <h1 className="font-semibold text-xl md:text-[16px] lg:text-xl text-white">CheckAuto.id </h1> */}
+    //       </div>
+    //       </div>
+    //       <div className="hidden md:flex justify-between gap-8 mt-4 md:mt-0 text-white">
+    //       <div className="flex items-center  gap-2">
+    //         <PhoneIcon className="h-4 w-4" />
+    //         <div>
+    //           <span className="font-semibold">+62 814-5623-4999</span>
+    //         </div>
+    //       </div>
+    //       <div>|</div>
+    //       <div className="flex gap-3">
+    //         <a
+    //           href="https://instagram.com"
+    //           target="_blank"
+    //           rel="noopener noreferrer"
+    //         >
+    //           <FaInstagram className="w-5 h-5 text-white hover:text-[#1c296a] " />
+    //         </a>
+    //         <a
+    //           href="https://facebook.com"
+    //           target="_blank"
+    //           rel="noopener noreferrer"
+    //         >
+    //           <FaFacebookF className="w-5 h-5 text-white hover:text-[#1c296a]" />
+    //         </a>
+    //       </div>
+    //       </div>
+    //     </nav>
+
+    //     {/* <div className="relative z-10 px-4 py-14 md:mt-10 md:px-18"> */}
+    //     <div className="relative z-10 px-4 py-14 md:mt-10 md:-mb-10 md:px-18 lg:mt-0 lg:-mb-10">
+    //       <div className="text-center ">
+    //         <h1 className="text-xl md:text-3xl text-white font-bold  lg:mb-1">Beli mobil bekas? </h1>
+    //         <h1 className="text-xl text-white font-bold md:text-3xl mb-2 md:mb-5">Biar kami bantu cekin dulu!</h1>
+    //         <p className="text-lg text-[#f4f4f4] font-semibold md:text-xl mb-4">Harga Mulai dari:</p>
+    //         <h1 className="text-xl md:text-2xl text-white font-bold my-4 lg:text-2xl">Rp 399.900</h1>
+    //         <button onClick={handleSubmitToWhatsApp} className="px-4 py-3 md:px-3 md:py-2 mt-2 bg-blue-500 rounded-lg transform transition-all duration-200 hover:scale-105 hover:bg-blue-900 drop-shadow-md text-sm md:text-base font-semibold cursor-pointer">
+    //           Hubungi Sekarang
+    //         </button>
+    //       </div>
+    //     </div>
+
+    //   </div>
+    // </section>
     <section
-      className="relative text-white bg-cover bg-bottom-left bg-no-repeat h-screen"
-      style={{ backgroundImage: "url(/img/hero_car4.webp)" }} 
+      className="relative text-white bg-cover bg-left lg:bg-center bg-no-repeat h-screen"
+      style={{ backgroundImage: "url(/img/hero3new.webp)" }}
     >
-      <div className="absolute inset-0 bg-black/5">
+      <div className="absolute inset-0 bg-black/30">
         <nav className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-sm">
-          <div className="flex items-center gap-4 mt-5 md:mt-0">
-          <img
-            src="/img/logo_check_auto.svg"
-            alt="Logo"
-            className="w-28 h-28  lg:w-30 lg:h-30 object-contain"
-          />
-          <div>
-            {/* <h1 className="font-semibold text-xl md:text-[16px] lg:text-xl text-white">CheckAuto.id </h1> */}
-          </div>
+          <div className="flex items-center gap-4 md:mt-0">
+            <img
+              src="/img/logo_check_auto.svg"
+              alt="Logo"
+              className="w-28 h-28 text-white  lg:w-30 lg:h-30 object-contain"
+            />
           </div>
           <div className="hidden md:flex justify-between gap-8 mt-4 md:mt-0 text-white">
-          <div className="flex items-center  gap-2">
-            <PhoneIcon className="h-4 w-4" />
-            <div>
-              <span className="font-semibold">+62 814-5623-4999</span>
+            <div className="flex items-center  gap-2">
+              <PhoneIcon className="h-4 w-4" />
+              <div>
+                <span className="font-semibold">+62 814-5623-4999</span>
+              </div>
             </div>
-          </div>
-          <div>|</div>
-          <div className="flex gap-3">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className="w-5 h-5 text-white hover:text-[#1c296a] " />
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebookF className="w-5 h-5 text-white hover:text-[#1c296a]" />
-            </a>
-          </div>
+            <div>|</div>
+            <div className="flex gap-3">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="w-5 h-5 text-white hover:text-[#1c296a] " />
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookF className="w-5 h-5 text-white hover:text-[#1c296a]" />
+              </a>
+            </div>
           </div>
         </nav>
 
-        {/* <div className="relative z-10 px-4 py-14 md:mt-10 md:px-18"> */}
-        <div className="relative z-10 px-4 py-14 md:mt-10 md:-mb-10 md:px-18 lg:mt-0 lg:-mb-10">
-          <div className="text-center ">
-            <h1 className="text-xl md:text-3xl text-white font-bold  lg:mb-1">Beli mobil bekas? </h1>
-            <h1 className="text-xl text-white font-bold md:text-3xl mb-2 md:mb-5">Biar kami bantu cekin dulu!</h1>
-            <p className="text-lg text-[#f4f4f4] font-semibold md:text-xl mb-4">Harga Mulai dari:</p>
-            <h1 className="text-xl md:text-2xl text-white font-bold my-4 lg:text-2xl">Rp 399.900</h1>
-            <button onClick={handleSubmitToWhatsApp} className="px-4 py-3 md:px-3 md:py-2 mt-2 bg-blue-500 rounded-lg transform transition-all duration-200 hover:scale-105 hover:bg-blue-900 drop-shadow-md text-sm md:text-base font-semibold cursor-pointer">
-              Hubungi Sekarang
-            </button>
+        <div className="relative z-10 px-4 py-16 md:mt-10 md:-mb-10 md:px-18 lg:mt-0 lg:-mb-10 max-w-4xl text-center mx-auto">
+          <h1 className="text-xl md:text-3xl text-[#fbfbfb] font-bold">
+            Beli Mobil Bekas Tanpa Cemas
+          </h1>
+          <h1 className="text-xl md:text-3xl text-[#fbfbfb] font-bold mb-3">
+            Kami bantu pastikan kondisi mobil incaran Anda aman, layak, dan bebas tipu-tipu!
+          </h1>
+          <p className="text-lg text-[#fbfbfb] font-semibold md:text-2xl mb-6">Harga Mulai dari:</p>
+          <div className="bg-white/50 rounded-lg px-6 py-3 inline-block shadow-md">
+            <h1 className="text-xl md:text-2xl text-[#192459] font-bold lg:text-3xl">
+              Rp 399.900
+            </h1>
           </div>
+          <a href="#">
+            <div className="my-8">
+              <button onClick={handleSubmitToWhatsApp} className="py-2 px-6 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white font-semibold shadow-md hover:from-blue-500 hover:to-blue-700 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                Pesan Inspeksi Sekarang
+              </button>
+            </div>
+          </a>
+
         </div>
         
       </div>
