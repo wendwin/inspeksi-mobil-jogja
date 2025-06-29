@@ -386,7 +386,7 @@ return (
             <div className="px-4 pt-3 pb-5 flex justify-end gap-3 sm:px-6">
             {currentTabIndex > 0 && (
                   <button
-                    className="px-3 py-2 bg-gray-200 rounded cursor-pointer text-sm hover:bg-gray-400 hover:text-white"
+                    className="px-3 py-2 bg-blue-600 text-white rounded cursor-pointer text-sm hover:bg-blue-500 hover:text-white"
                     onClick={goToPreviousTab}
                   >
                     Kembali
